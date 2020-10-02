@@ -2,24 +2,24 @@
 .str_wrap {
 	overflow:hidden;
 	//zoom:1;
-	//width:100%; //change
+	width:100%;
 	font-size:12px;
 	line-height:16px;
 	position:relative;
 	-moz-user-select: none;
 	-khtml-user-select: none;
-	user-select: none;  
-	//background:#f6f6f6;
+	user-select: none;
+	background:#f6f6f6;
 	white-space:nowrap;
 }
 
 .str_wrap.str_active {
-	background:#ffffff;
+	background:#f1f1f1;
 }
-.str_move { 
+.str_move {
 	white-space:nowrap;
-	position:absolute; 
-	top:0; 
+	position:absolute;
+	top:0;
 	left:0;
 	cursor:move;
 }
@@ -28,7 +28,7 @@
 	//display:inline;
 	//zoom:1;
 	vertical-align:top;
-	position:absolute; 
+	position:absolute;
 	left:100%;
 	top:0;
 }
@@ -51,5 +51,5 @@
 	cursor:inherit;
 }
 .str_wrap img {
-	max-width:none !important;	
+	max-width:none !important;
 }

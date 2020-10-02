@@ -1,3 +1,7 @@
+* {
+  outline: none;
+}
+
 .container {
   margin: 0 auto;
   width: 100%;
@@ -50,7 +54,7 @@
       font-weight: 400;
     }
   }
-  
+
   &__text {
     font-family: var(--ff-OpenSans);
     font-size: 0.8em;

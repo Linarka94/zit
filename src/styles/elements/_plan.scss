@@ -33,7 +33,6 @@
 
   &__body {
     margin: 72px auto auto;
-    overflow-x: scroll;
 
     &-button {
       display: flex;
@@ -83,13 +82,13 @@
 
   &__link {
     margin-right: 16px;
-    width: 416px;
+    width: 416px !important;
     height: 400px;
     padding: 24px 20px 24px 24px;
     background-image: url("/img/panno.svg");
     background-repeat: no-repeat;
     background-color: var(--bg-plan);
-    display: flex;
+    display: flex !important;
     flex-direction: column;
     text-decoration: none;
     font-weight: 600;
