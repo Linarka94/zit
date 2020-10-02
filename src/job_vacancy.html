@@ -1,0 +1,143 @@
+@@include('./_head.html')
+@@include('./_header.html')
+<ul class="breadcrumb container container--header-footer">
+  <li class="breadcrumb__item"><a href="job.html" class="breadcrumb__link breadcrumb__link--back">Назад</a></li>
+  <li class="breadcrumb__item"><a href="index.html" class="breadcrumb__link">Главная</a></li>
+  <li class="breadcrumb__item"><a href="" class="breadcrumb__link">Компания</a></li>
+  <li class="breadcrumb__item"><a href="job.html" class="breadcrumb__link">Карьера</a></li>
+  <li class="breadcrumb__item"><a href="job_vacancy.html" class="breadcrumb__link">Вакансии</a></li>
+</ul>
+<section class="container container--header-footer">
+  <div class="vacancy">
+    <div class="vacancy__head">
+      <h1 class="page__title vacancy__title">
+        Вакансии
+      </h1>
+      <img src="/img/zit-logo.svg" alt="Логотип компании" class="vacancy__logo">
+    </div>
+  </div>
+</section>
+<div class="job__nav container">
+  <a href="job.html" class="job__nav-link">Карьера</a>
+  <a href="job_vacancy.html" class="job__nav-link job__nav-link--active">Вакансии</a>
+  <a href="" class="job__nav-link">Стажировка</a>
+</div>
+<section class="vacancy__list container">
+  <div class="vacancy__choice">
+    <select name="vacancy__city" id="vacancy__city" class="single__city vacancy__select">
+      <option value="KZN">Казань</option>
+      <option value="MSC">Москва</option>
+      <option value="SPB">Санкт-Петербург</option>
+      <option value="NN">Нижний Новгород</option>
+      <option value="EKB">Екатеринбург</option>
+    </select>
+    <select name="vacancy__exp" id="vacancy__exp" class="single__exp vacancy__select">
+      <option value="No-exp">Без опыта</option>
+      <option value="<1-exp">Меньше года</option>
+      <option value="1:3-exp">От 1 года до 3 лет</option>
+      <option value="3:5-exp">От 3 лет до 5 лет</option>
+      <option value=">5-exp">Более 5 лет</option>
+    </select>
+  </div>
+  <div class="vacancy__item-wrap">
+    <a href="job_vacancy-front.html" class="vacancy__item">
+      <span class="vacancy__item-title">
+        Front-end разработка
+      </span>
+      <span class="news__item-branch vacancy__item-branch">
+          7 вакансий
+          <span class="vacancy__item-link">Подробнее</span>
+      </span>
+    </a>
+    <a href="" class="vacancy__item">
+      <span class="vacancy__item-title">
+        Back-end разработка
+      </span>
+      <span class="news__item-branch vacancy__item-branch">
+          2 вакансии
+          <span class="vacancy__item-link">Подробнее</span>
+      </span>
+    </a>
+    <a href="" class="vacancy__item">
+      <span class="vacancy__item-title">
+        Финансы
+      </span>
+      <span class="news__item-branch vacancy__item-branch">
+          7 вакансий
+          <span class="vacancy__item-link">Подробнее</span>
+      </span>
+    </a>
+    <a href="" class="vacancy__item">
+      <span class="vacancy__item-title">
+        Информационная безопасность
+      </span>
+      <span class="news__item-branch vacancy__item-branch">
+          7 вакансий
+          <span class="vacancy__item-link">Подробнее</span>
+      </span>
+    </a>
+    <a href="" class="vacancy__item">
+      <span class="vacancy__item-title">
+        Аналитика
+      </span>
+      <span class="news__item-branch vacancy__item-branch">
+          7 вакансий
+          <span class="vacancy__item-link">Подробнее</span>
+      </span>
+    </a>
+    <a href="" class="vacancy__item">
+      <span class="vacancy__item-title">
+        Управление проектами
+      </span>
+      <span class="news__item-branch vacancy__item-branch">
+          7 вакансий
+          <span class="vacancy__item-link">Подробнее</span>
+      </span>
+    </a>
+    <a href="" class="vacancy__item">
+      <span class="vacancy__item-title">
+        Тестирование
+      </span>
+      <span class="news__item-branch vacancy__item-branch">
+          7 вакансий
+          <span class="vacancy__item-link">Подробнее</span>
+      </span>
+    </a>
+    <a href="" class="vacancy__item">
+      <span class="vacancy__item-title">
+        Инфраструктура/Администрирова- ние
+      </span>
+      <span class="news__item-branch vacancy__item-branch">
+          7 вакансий
+          <span class="vacancy__item-link">Подробнее</span>
+      </span>
+    </a>
+    <a href="" class="vacancy__item">
+      <span class="vacancy__item-title">
+        Full-stack разработка
+      </span>
+      <span class="news__item-branch vacancy__item-branch">
+          7 вакансий
+          <span class="vacancy__item-link">Подробнее</span>
+      </span>
+    </a>
+    <a href="" class="vacancy__item">
+    <span class="vacancy__item-title">
+        Маркетинг и PR
+      </span>
+    <span class="news__item-branch vacancy__item-branch">
+          7 вакансий
+          <span class="vacancy__item-link">Подробнее</span>
+      </span>
+    </a>
+    <a href="" class="vacancy__item">
+      <span class="vacancy__item-title">
+        Не нашли свою вакансию?
+      </span>
+      <span class="vacancy__item-description">
+        Заполните форму. Мы всегда ищем новые таланты и возможно нам нужны именно Вы!
+      </span>
+    </a>
+  </div>
+</section>
+@@include('./_footer.html')

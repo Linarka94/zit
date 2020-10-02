@@ -1,0 +1,45 @@
+.egis {
+  padding-top: 83px;
+  padding-bottom: 75px;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-image: url('/img/egis_01.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+  }
+
+  &__description {
+    margin-top: 22px;
+    max-width: 700px;
+  }
+
+  &__link {
+    text-decoration: none;
+    font-size: 0.8em;
+    font-weight: 600;
+    color: var(--text-white);
+    background-color: var(--bg-blue);
+    border-radius: 4px;
+    max-width: 272px;
+    width: 100%;
+    text-align: center;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    margin-right: 32px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &-wrap {
+      margin-top: 30px;
+      padding-bottom: 70px;
+      display: flex;
+      align-items: center;
+    }
+  }
+}

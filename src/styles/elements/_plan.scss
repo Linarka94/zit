@@ -1,0 +1,125 @@
+.plan {
+  padding-top: 86px;
+  padding-bottom: 111px;
+  padding-right: 0;
+  position: relative;
+
+  &__head {
+    display: flex;
+    align-items: center;
+
+    & .page__subtitle:after {
+      content: none;
+    }
+  }
+
+  &__input {
+    display: none;
+
+    &:checked + .plan__label {
+      border-color: var(--bg-blue);
+    }
+  }
+
+  &__label {
+    cursor: pointer;
+    transition: var(--transition);
+    border-bottom: 3px solid transparent;
+
+    &:first-of-type {
+      margin-right: 40px;
+    }
+  }
+
+  &__body {
+    margin: 72px auto auto;
+    overflow-x: scroll;
+
+    &-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: var(--bg-white);
+      border-radius: 50%;
+      border: 2px solid transparent;
+      cursor: pointer;
+      width: 64px;
+      height: 64px;
+      position: absolute;
+      top: 55%;
+      right: 6%;
+      transform: translate(-50%,-50%);
+      z-index: 1;
+      opacity: 0.6;
+      transition: var(--transition);
+
+      &:focus,
+      &:active {
+        outline: none;
+        border-color: var(--text-color);
+        opacity: 1;
+      }
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+
+    ////TODO change
+    //
+    //scrollbar-width: none;
+    //
+    //&::-webkit-scrollbar {
+    //  width: 0px;
+    //  background: rgba(255, 255, 255, 0.0);
+    //}
+  }
+
+  &__wrap {
+    width: calc(416px * 6);
+    display: flex;
+    transition: var(--transition);
+  }
+
+  &__link {
+    margin-right: 16px;
+    width: 416px;
+    height: 400px;
+    padding: 24px 20px 24px 24px;
+    background-image: url("/img/panno.svg");
+    background-repeat: no-repeat;
+    background-color: var(--bg-plan);
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.2em;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    color: var(--text-color);
+    transition: var(--transition);
+
+    &:hover {
+      background-color: var(--bg-white);
+      border-color: var(--bg-blue);
+      box-shadow: 0px 2px 8px #F1F3F5;
+    }
+
+    &-more {
+      font-size: 0.7em;
+      color: var(--link-color);
+      text-align: center;
+      text-decoration: none;
+      padding: 13px;
+      max-width: 184px;
+      border: 1px solid var(--link-color);
+      border-radius: 4px;
+      margin-top: auto;
+    }
+
+    &-icon {
+      width: 112px;
+      height: 112px;
+    }
+  }
+}
