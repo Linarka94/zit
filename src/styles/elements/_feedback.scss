@@ -1,0 +1,18 @@
+.feedback {
+  margin-top: 48px;
+  padding-bottom: 45px;
+
+  &__text {
+    font-size: 0.9em;
+
+    &:first-child {
+      max-width: 580px;
+    }
+
+    &--fw700 {
+      font-size: 1.2em;
+      font-weight: 700;
+      display: block;
+    }
+  }
+}

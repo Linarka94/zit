@@ -1,49 +1,35 @@
 @@include('./_head.html')
 @@include('./_header.html')
 <section class="slider">
-  <input type="radio" name="slider__toggle" id="slider1" class="slider__input" checked>
-  <input type="radio" name="slider__toggle" id="slider2" class="slider__input">
-  <input type="radio" name="slider__toggle" id="slider3" class="slider__input">
-  <input type="radio" name="slider__toggle" id="slider4" class="slider__input">
-  <input type="radio" name="slider__toggle" id="slider5" class="slider__input">
-  <div class="slider__controls">
-    <label for="slider1" class="slider__label slider__label--slider1"></label>
-    <label for="slider2" class="slider__label slider__label--slider2"></label>
-    <label for="slider3" class="slider__label slider__label--slider3"></label>
-    <label for="slider4" class="slider__label slider__label--slider4"></label>
-    <label for="slider5" class="slider__label slider__label--slider5"></label>
-  </div>
-  <div class="slider__inner">
-    <div class="slider__slides">
-      <div class="slider__slide slider__slide--slide1 container">
-        <p class="slider__content">
-          Цифровые проекты на транспорте
-        </p>
-      </div>
-      <div class="slider__slide slider__slide--slide2 container">
-        <p class="slider__content">
-          Цифровые проекты на транспорте
-        </p>
-      </div>
-      <div class="slider__slide slider__slide--slide3 container">
-        <p class="slider__content">
-          Цифровые проекты на транспорте
-        </p>
-      </div>
-      <div class="slider__slide slider__slide--slide4 container">
-        <p class="slider__content">
-          Цифровые проекты на транспорте
-        </p>
-      </div>
-      <div class="slider__slide slider__slide--slide5 container">
-        <p class="slider__content">
-          Цифровые проекты на транспорте
-        </p>
-      </div>
+  <div class="slick-autoplay">
+    <div class="slider__slide">
+      <p class="slider__content">
+        Цифровые проекты на транспорте 1
+      </p>
+    </div>
+    <div class="slider__slide">
+      <p class="slider__content">
+        Цифровые проекты на транспорте 2
+      </p>
+    </div>
+    <div class="slider__slide">
+      <p class="slider__content">
+        Цифровые проекты на транспорте 3
+      </p>
+    </div>
+    <div class="slider__slide">
+      <p class="slider__content">
+        Цифровые проекты на транспорте 4
+      </p>
+    </div>
+    <div class="slider__slide">
+      <p class="slider__content">
+        Цифровые проекты на транспорте 5
+      </p>
     </div>
   </div>
 </section>
-<section class="egis container container--flex">
+<section class="page__block container container--flex">
   <div class="egis__content">
     <h1 class="page__title">
       ЕГИС ОТБ / IGIS TS
@@ -83,16 +69,30 @@
             4 июн 2020
           </div>
           <div class="news__item-branch">
-            Тематика новости
+            Минтранс
           </div>
         </div>
         <h3 class="news__item-title">
-          Минтранс России оцифрует транспортную накладную и путевой лист
+          1 октября начнется тестирование электронного оформления перевозок на транспорте
         </h3>
         <p class="news__item-text">
-          Минтранс России запустил эксперимент для внедрения электронной транспортной…
+          С 1 по 30 октября 2020 года ряд крупнейших российских грузоперевозчиков и операторов электронного документооборота примут участие в эксперименте Минтранса России по внедрению электронной транспортной накладной (ЭТрН) и электронного путевого листа (ЭПЛ) на автомобильном транспорте при перевозке пассажиров и грузов. Подготовка к запуску проекта началась в феврале текущего года.
+
+          В рамках практической части эксперимента будет проведено тестирование механизмов оформления первичных перевозочных документов в электронном виде. Цифровое взаимодействие между представителями бизнеса и государства обеспечит прототип единой государственной информационной системы, разработанный ФГУП «ЗащитаИнфоТранс». Обмен юридически значимыми первичными перевозочными документами между участниками транспортно-логистической цепочки и федеральными органами исполнительной власти, осуществляющими контрольно-надзорные, разрешительные и фискальные функции, будет происходить в режиме 24/7/365. Учитывая требования российского законодательства, первичные перевозочные документы в рамках эксперимента будут заполняться как в электронном, так и в бумажном виде.
+
+          «Существующий механизм оформления транспортной накладной и путевого листа «на бумаге» требует от всех участников рынка перевозок существенных временных и финансовых затрат. Перевод же их в цифру обеспечит качественно новый уровень документооборота, что для бизнеса означает сокращение затрат, а для государства – прозрачность контроля. Проводимый Минтрансом совместно с ведущими участниками рынка эксперимент призван наглядно доказать работоспособность информационной системы и надежность цифровой платформы», – отметил заместитель министра транспорта Алексей Семёнов.
+
+          По поручению Минтранса России эксперимент проводит подведомственное министерству ФБУ «Росавтотранс».  Для реализации электронного взаимодействия проработаны различные сценарии оформления перевозки.
+
+          Пилотной зоной эксперимента выбраны территории Москвы, Татарстана, Московской, Калужской, Рязанской областей и Краснодарского края. Протяженность дорожной сети, логистическая насыщенность и перевозочная активность в этих регионах позволят максимально полно протестировать процедуры электронного документооборота.
+
+          В целом цифровизация транспортно-логистической деятельности при перевозках пассажиров и грузов, а также создание единых стандартов обмена данными между госорганами и бизнесом позволит повысить безопасность дорожного движения, сократить издержки бизнеса, ускорить и упростить прохождение контрольно-надзорных процедур.
+
+          Источник: https://mintrans.gov.ru/press-center/news/9702
+
+
         </p>
-        <a href="" class="news__item-link">
+        <a href="news-detail.html" class="news__item-link">
           Читать далее
         </a>
       </div>

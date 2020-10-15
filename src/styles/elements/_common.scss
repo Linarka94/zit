@@ -1,21 +1,31 @@
-* {
-  outline: none;
-}
-
 .container {
   margin: 0 auto;
   width: 100%;
   max-width: 1504px;
   padding: 0 112px;
 
+  @media (max-width: $tablet-device-l) {
+    padding-left: 72px;
+    padding-right: 72px;
+  }
+
   &--header-footer {
     padding: 0 40px;
+
+    @media (max-width: $tablet-device-l) {
+      padding-left: 8px;
+      padding-right: 8px;
+    }
   }
 
   &--flex {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  &--align-stretch {
+    align-items: stretch;
   }
 }
 
@@ -43,6 +53,7 @@
     &:after {
       content: '';
       display: inline-block;
+      vertical-align: middle;
       background-image: url("/img/icon/Arrow/Right/Type3.svg");
       background-position: right;
       background-repeat: no-repeat;

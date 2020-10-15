@@ -28,6 +28,12 @@
     margin-right: 40px;
     transition: var(--transition);
 
+    //TODO change (blue ...)
+
+    @media (max-width: $tablet-device-l) {
+      margin-right: 20px;
+    }
+
     &:last-child {
       margin-right: 0;
     }

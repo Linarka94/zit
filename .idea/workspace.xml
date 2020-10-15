@@ -25,6 +25,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="js.buildTools.gulp.gulp_package_dir" value="$PROJECT_DIR$/node_modules/gulp" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/js" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -45,6 +46,17 @@
       <recent name="$PROJECT_DIR$/src/styles/elements" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration default="true" type="js.build_tools.gulp">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -53,7 +65,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1601295663824</updated>
-      <workItem from="1601295664863" duration="72109000" />
+      <workItem from="1601295664863" duration="141595000" />
     </task>
     <servers />
   </component>
@@ -69,25 +81,54 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="354" y="135" key="#Inspections/0.0.1440.900/1440.-104.1920.1080@0.0.1440.900" timestamp="1601549777708" />
-    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601298693062">
+    <state x="320" y="115" key="#Intentions" timestamp="1601997649448">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900/1440.-104.1920.1080@0.0.1440.900" timestamp="1601298693062" />
-    <state x="458" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1601551155102">
+    <state x="320" y="115" key="#Intentions/0.0.1440.900/1440.-104.1920.1080@0.0.1440.900" timestamp="1601997649448" />
+    <state x="451" y="166" key="#JavaScript" timestamp="1601900434459">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="458" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900/1440.-104.1920.1080@0.0.1440.900" timestamp="1601551155102" />
+    <state x="451" y="166" key="#JavaScript/0.0.1440.900/1440.-104.1920.1080@0.0.1440.900" timestamp="1601900434459" />
+    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601654465861">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900/1440.-104.1920.1080@0.0.1440.900" timestamp="1601654465861" />
+    <state x="458" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1602670181905">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="458" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900/1440.-104.1920.1080@0.0.1440.900" timestamp="1601887728231" />
+    <state x="458" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900@0.0.1440.900" timestamp="1602670181905" />
     <state x="0" y="0" key="FileDocumentManager.FileCacheConflict" timestamp="1601551360382">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="0" y="0" key="FileDocumentManager.FileCacheConflict/0.0.1440.900/1440.-104.1920.1080@0.0.1440.900" timestamp="1601551360382" />
-    <state x="421" y="183" width="598" height="534" key="find.popup" timestamp="1601479604711">
+    <state width="1419" height="245" key="GridCell.Tab.0.bottom" timestamp="1601654716903">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="421" y="183" width="598" height="534" key="find.popup/0.0.1440.900/1440.-104.1920.1080@0.0.1440.900" timestamp="1601479604711" />
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1601552400611">
+    <state width="1419" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.-104.1920.1080@0.0.1440.900" timestamp="1601654716903" />
+    <state width="1419" height="245" key="GridCell.Tab.0.center" timestamp="1601654716900">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900/1440.-104.1920.1080@0.0.1440.900" timestamp="1601552400611" />
+    <state width="1419" height="245" key="GridCell.Tab.0.center/0.0.1440.900/1440.-104.1920.1080@0.0.1440.900" timestamp="1601654716900" />
+    <state width="1419" height="245" key="GridCell.Tab.0.left" timestamp="1601654716899">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1419" height="245" key="GridCell.Tab.0.left/0.0.1440.900/1440.-104.1920.1080@0.0.1440.900" timestamp="1601654716899" />
+    <state width="1419" height="245" key="GridCell.Tab.0.right" timestamp="1601654716902">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1419" height="245" key="GridCell.Tab.0.right/0.0.1440.900/1440.-104.1920.1080@0.0.1440.900" timestamp="1601654716902" />
+    <state x="450" y="200" width="540" height="524" key="StructurePopup" timestamp="1602496918039">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="450" y="200" width="540" height="524" key="StructurePopup/0.0.1440.900/1440.-104.1920.1080@0.0.1440.900" timestamp="1602496918039" />
+    <state x="421" y="183" width="598" height="534" key="find.popup" timestamp="1602515363005">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="421" y="183" width="598" height="534" key="find.popup/0.0.1440.900/1440.-104.1920.1080@0.0.1440.900" timestamp="1602515363005" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1601901973520">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900/1440.-104.1920.1080@0.0.1440.900" timestamp="1601901973520" />
   </component>
 </project>

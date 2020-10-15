@@ -5,6 +5,8 @@
   padding-bottom: 39px;
   position: relative;
 
+  min-height: 240px;
+
   &:after {
     content: '';
     background-image: url("/img/panno-job.svg");
@@ -34,6 +36,7 @@
   &__logo {
     width: 331px;
     height: 163px;
+    mix-blend-mode: luminosity;
   }
 
   &__choice {
@@ -59,7 +62,6 @@
     min-height: 128px;
     text-decoration: none;
     padding: 16px;
-    border: 1px solid #F1F3F5;
     box-shadow: 0 2px 8px #F1F3F5;
     border-radius: 4px;
     display: flex;
@@ -68,6 +70,11 @@
     margin-right: 16px;
     border: 1px solid transparent;
     transition: var(--transition);
+
+    @media (max-width: $tablet-device-l) {
+      width: calc(50% - 8px);
+      margin-right: 0;
+    }
 
     &:hover {
       box-shadow: 0 3px 9px #F1F3F5;
@@ -83,6 +90,11 @@
       padding-bottom: 435px;
       display: flex;
       flex-wrap: wrap;
+
+      @media (max-width: $tablet-device-l) {
+        justify-content: space-between;
+        padding-bottom: 155px;
+      }
     }
 
     &:nth-child(n+4) {
@@ -121,10 +133,11 @@
       background-image: url('/img/arrow-right.svg');
       background-repeat: no-repeat;
       background-position: calc(100% - 16px) center;
+      margin-top: 0;
+      margin-right: 0;
 
-      &:nth-child(n) {
-        margin-top: 0;
-        margin-right: 0;
+      @media (max-width: $tablet-device-l) {
+        width: 100%;
       }
 
       &:not(:first-child) {
@@ -176,12 +189,19 @@
     &-link {
       margin-top: 0;
       margin-bottom: auto;
+      padding-left: 25px;
+      padding-right: 25px;
+      font-size: 0.8em;
     }
   }
 
   &__description {
     padding-top: 92px;
     padding-bottom: 260px;
+
+    @media (max-width: $tablet-device-l) {
+      padding-bottom: 115px;
+    }
 
     &-item {
       display: flex;
@@ -195,6 +215,7 @@
 
     &-head {
       font-weight: 600;
+      min-width: 368px;
     }
 
     &-list {

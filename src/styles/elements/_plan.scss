@@ -33,51 +33,6 @@
 
   &__body {
     margin: 72px auto auto;
-
-    &-button {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background-color: var(--bg-white);
-      border-radius: 50%;
-      border: 2px solid transparent;
-      cursor: pointer;
-      width: 64px;
-      height: 64px;
-      position: absolute;
-      top: 55%;
-      right: 6%;
-      transform: translate(-50%,-50%);
-      z-index: 1;
-      opacity: 0.6;
-      transition: var(--transition);
-
-      &:focus,
-      &:active {
-        outline: none;
-        border-color: var(--text-color);
-        opacity: 1;
-      }
-
-      &:hover {
-        opacity: 1;
-      }
-    }
-
-    ////TODO change
-    //
-    //scrollbar-width: none;
-    //
-    //&::-webkit-scrollbar {
-    //  width: 0px;
-    //  background: rgba(255, 255, 255, 0.0);
-    //}
-  }
-
-  &__wrap {
-    width: calc(416px * 6);
-    display: flex;
-    transition: var(--transition);
   }
 
   &__link {
