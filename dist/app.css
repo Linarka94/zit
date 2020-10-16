@@ -1674,7 +1674,6 @@ a.page__subtitle:hover {
   -webkit-box-shadow: 0px 2px 8px #F1F3F5;
           box-shadow: 0px 2px 8px #F1F3F5;
   z-index: 10;
-  overflow: hidden;
 }
 
 .header__nav {
@@ -1688,6 +1687,10 @@ a.page__subtitle:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.header__nav > .header__link:after {
+  content: none;
 }
 
 .header__item {
@@ -1762,10 +1765,6 @@ a.page__subtitle:hover {
   -webkit-transition: var(--transition);
   -o-transition: var(--transition);
   transition: var(--transition);
-}
-
-.header__link:first-child:after {
-  content: none;
 }
 
 .header__connect-link {
