@@ -69,6 +69,16 @@
       border: 1px solid var(--link-color);
       border-radius: 4px;
       margin-top: auto;
+      transition: var(--transition);
+
+      &:hover {
+        background-color: var(--bg-blue);
+        color: var(--text-white);
+      }
+
+      &:active {
+        opacity: 0.8;
+      }
     }
 
     &-icon {

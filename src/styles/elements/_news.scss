@@ -2,6 +2,10 @@
   padding-top: 82px;
   background-color: var(--bg-light);
 
+  @media (max-width: $tablet-device-l) {
+    padding-top: 64px;
+  }
+
   &__wrapper {
     padding-top: 47px;
     padding-bottom: 80px;
@@ -9,6 +13,10 @@
     justify-content: space-between;
     align-items: stretch;
     flex-wrap: wrap;
+
+    @media (max-width: $tablet-device-m) {
+      padding-bottom: 60px;
+    }
   }
 
   &__item {
@@ -21,6 +29,11 @@
     border-radius: 4px;
     color: var(--text-color);
     transition: var(--transition);
+
+
+    @media (max-width: $tablet-device-l) {
+      width: calc(50% - 8px);
+    }
 
     &:hover {
       box-shadow: 0px 24px 69px rgba(0, 0, 0, 0.04), 0px 7.2353px 20.8015px rgba(0, 0, 0, 0.0260636), 0px 3.00517px 8.63987px rgba(0, 0, 0, 0.02), 0px 1.08691px 3.12487px rgba(0, 0, 0, 0.0139364);
@@ -38,7 +51,6 @@
 
       @media (max-width: $tablet-device-l) {
         margin-top: 16px;
-        width: calc(50% - 8px);
       }
     }
 
@@ -74,6 +86,15 @@
       font-size: 0.7em;
       margin-top: auto;
       max-width: 100px;
+      transition: var(--transition);
+
+      &:hover {
+        color: var(--link-hover);
+      }
+
+      &:active {
+        opacity: 0.8;
+      }
     }
 
     &-branch {
@@ -125,6 +146,14 @@
     padding-left: 48px;
     padding-right: 120px;
 
+    @media (max-width: $tablet-device-l) {
+      padding-right: 19px;
+    }
+
+    @media (max-width: $tablet-device-m) {
+      padding-right: 0;
+    }
+
     &-title {
       text-transform: uppercase;
       color: var(--text-white);
@@ -148,15 +177,22 @@
         flex-grow: 1;
       }
 
-      //TODO change
-      & select.news__all-select {
-        margin-right: 16px;
+      & .select2 {
+        display: none;
       }
     }
 
     & .news__item {
       box-shadow: 0 2px 8px #F1F3F5;
       border-radius: 4px;
+      margin-top: 16px;
+
+      @media (max-width: $tablet-device-l) {
+
+        &:nth-child(-n+2) {
+          margin-top: 0;
+        }
+      }
     }
 
     &-setting {
@@ -166,7 +202,6 @@
     }
 
     &-pagination {
-      margin-top: 24px;
       display: flex;
       align-items: center;
 
@@ -213,6 +248,17 @@
 
     & .news__wrapper .news__item:last-child {
       margin-top: 0;
+
+      @media (max-width: $tablet-device-l) {
+        display: none;
+      }
+    }
+
+    & .news__wrapper .news__item:nth-last-child(2) {
+
+      @media (max-width: $tablet-device-l) {
+        margin-top: 0;
+      }
     }
 
     &-img {
@@ -254,6 +300,7 @@
       font-size: 1.6em;
       font-weight: 700;
       margin-top: 18px;
+      line-height: 1.25;
     }
 
     &-text,

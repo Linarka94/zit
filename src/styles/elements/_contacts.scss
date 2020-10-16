@@ -1,17 +1,73 @@
 .contacts {
   margin-top: 64px;
 
-  & .feedback__text {
+  & > .feedback .feedback__text {
     width: calc(33.333% - 24px);
+
+    @media (max-width: $tablet-device-m) {
+      order: 1;
+    }
+
+    &:not(:first-child) {
+      margin-top: 0;
+    }
+
+    &:last-child {
+
+      @media (max-width: $tablet-device-m) {
+        margin-top: 40px;
+        width: 100%;
+        max-width: none;
+      }
+    }
   }
 
   &__consultation {
     margin-top: 73px;
     background-color: #F2F8FE;
     border-radius: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+
+    & .feedback__text {
+
+      @media (max-width: $tablet-device-m) {
+        max-width: none;
+        margin-top: 0;
+      }
+    }
+
+    @media (max-width: $tablet-device-m) {
+      margin-top: 0;
+      padding-bottom: 25px;
+      padding-top: 24px;
+    }
 
     &--ml {
       margin-left: 36px;
+    }
+
+    &--flex {
+      @media (max-width: $tablet-device-m) {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+
+    &-img {
+      width: 173px;
+      height: 167px;
+      margin-right: 56px;
+      margin-left: 52px;
+
+      @media (max-width: $tablet-device-l) {
+        margin-right: 16px;
+        margin-left: 24px;
+      }
+
+      @media (max-width: $tablet-device-m) {
+        margin-left: 16px;
+      }
     }
   }
 
@@ -25,10 +81,24 @@
     border-radius: 4px;
     cursor: pointer;
     transition: var(--transition);
+    margin-right: 32px;
 
-    //TODO change
+    @media (max-width: $tablet-device-l) {
+      font-size: 0.8em;
+      margin-right: 51px;
+    }
+
+    @media (max-width: $tablet-device-m) {
+      order: 2;
+      margin-top: 16px;
+    }
+
     &:hover {
-      filter: brightness(0.9);
+      background-color: var(--link-hover);
+    }
+
+    &:active {
+      opacity: 0.8;
     }
   }
 
@@ -48,6 +118,10 @@
 
     &-item {
       width: calc(50% - 32px);
+
+      @media (max-width: $tablet-device-m) {
+        width: calc(50% - 24px);
+      }
 
       &:nth-child(n+3) {
         margin-top: 27px;

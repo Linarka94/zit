@@ -7,9 +7,23 @@
 
     &-item {
       display: flex;
+      width: calc(50% - 32px);
+
+      @media (max-width: $tablet-device-l) {
+        width: 100%;
+        margin-top: 16px;
+
+        &:first-child {
+          margin-top: 0;
+        }
+      }
 
       &:nth-child(n+3) {
         margin-top: 72px;
+
+        @media (max-width: $tablet-device-l) {
+          margin-top: 16px;
+        }
       }
     }
   }
@@ -24,7 +38,7 @@
   &__doc {
     display: flex;
     flex-direction: column;
-    width: 488px;
+    width: 100%;
     border: 1px solid #F3F3F5;
     border-radius: 4px;
     padding-top: 16px;
@@ -50,6 +64,15 @@
       text-decoration: none;
       font-size: 0.7em;
       color: var(--link-color);
+      transition: var(--transition);
+
+      &:hover {
+        color: var(--link-hover);
+      }
+
+      &:active {
+        opacity: 0.8;
+      }
     }
 
     &-size {

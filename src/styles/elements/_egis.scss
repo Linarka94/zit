@@ -12,6 +12,11 @@
     @media (max-width: $tablet-device-l) {
       background-size: 432px 370px;
     }
+
+    @media (max-width: $tablet-device-m) {
+      background-size: 311px 266px;
+      background-position: right top;
+    }
   }
 
   &__description {
@@ -36,9 +41,18 @@
     padding-top: 13px;
     padding-bottom: 13px;
     margin-right: 32px;
+    transition: var(--transition);
 
     &:last-child {
       margin-right: 0;
+    }
+
+    &:hover {
+      background-color: var(--link-hover);
+    }
+
+    &:active {
+      opacity: 0.8;
     }
 
     &-wrap {
@@ -46,6 +60,10 @@
       padding-bottom: 70px;
       display: flex;
       align-items: center;
+
+      @media (max-width: $tablet-device-m) {
+        padding-bottom: 0;
+      }
     }
   }
 }

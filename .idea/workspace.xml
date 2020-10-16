@@ -38,6 +38,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/img" />
       <recent name="$PROJECT_DIR$/src/js" />
       <recent name="$PROJECT_DIR$/src/js/elem" />
     </key>
@@ -65,7 +66,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1601295663824</updated>
-      <workItem from="1601295664863" duration="141595000" />
+      <workItem from="1601295664863" duration="183154000" />
     </task>
     <servers />
   </component>
@@ -122,13 +123,14 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="450" y="200" width="540" height="524" key="StructurePopup/0.0.1440.900/1440.-104.1920.1080@0.0.1440.900" timestamp="1602496918039" />
-    <state x="421" y="183" width="598" height="534" key="find.popup" timestamp="1602515363005">
+    <state x="421" y="183" width="598" height="534" key="find.popup" timestamp="1602860339391">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="421" y="183" width="598" height="534" key="find.popup/0.0.1440.900/1440.-104.1920.1080@0.0.1440.900" timestamp="1602515363005" />
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1601901973520">
+    <state x="421" y="183" width="598" height="534" key="find.popup/0.0.1440.900/1440.-104.1920.1080@0.0.1440.900" timestamp="1602860339391" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1602765500485">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900/1440.-104.1920.1080@0.0.1440.900" timestamp="1601901973520" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1602765500485" />
   </component>
 </project>

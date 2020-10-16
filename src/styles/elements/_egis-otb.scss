@@ -27,12 +27,24 @@
     max-width: 448px;
     margin-top: 24px;
 
+    @media (max-width: $tablet-device-m) {
+      max-width: 320px;
+    }
+
     &:last-child {
       margin-right: 32px;
+
+      @media (max-width: $tablet-device-m) {
+        margin-right: 0;
+      }
     }
 
     &:first-child {
       margin-top: 0;
+    }
+
+    &:hover {
+      color: var(--text-white);
     }
 
     &-wrap {
@@ -44,17 +56,29 @@
   &__task {
     font-size: 0.9em;
 
+    @media (max-width: $tablet-device-m) {
+      font-size: 0.8em;
+    }
+
     &-wrap {
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
       margin-top: 100px;
+
+      @media (max-width: $tablet-device-m) {
+        margin-top: 87px;
+      }
     }
 
     &-icon {
       width: 80px;
       height: 80px;
       margin-right: 48px;
+
+      @media (max-width: $tablet-device-l) {
+        margin-right: 32px;
+      }
     }
 
     &-item {
@@ -63,6 +87,10 @@
       max-width: calc(50% - 35px);
       padding-bottom: 55px;
       border-bottom: 1px solid #DAEBF7;
+
+      @media (max-width: $tablet-device-m) {
+        width: calc(50% - 15px);
+      }
 
       &:nth-of-type(n+3) {
         margin-top: 64px;
@@ -73,13 +101,18 @@
       }
 
       @media (max-width: $tablet-device-l) {
-        padding-bottom: 25px;
+        padding-bottom: 21px;
+      }
+
+      @media (max-width: $tablet-device-m) {
+        padding-bottom: 0;
+        border-bottom: none;
       }
     }
 
     &-value {
       color: var(--link-color);
-      font-weight: 800;
+      font-weight: 700;
       font-size: 2.8em;
 
       &--fs {
@@ -92,10 +125,26 @@
     background-color: var(--bg-light);
 
     &-map {
+      margin-left: 40px;
+      margin-right: 40px;
+      margin-top: 32px;
+
+      @media (max-width: $tablet-device-m) {
+        margin-right: 0;
+        overflow: scroll;
+      }
+    }
+
+    &-img {
       display: block;
-      margin: 32px auto auto;
-      padding-left: 40px;
-      padding-right: 40px;
+      margin: auto;
+
+      @media (max-width: $tablet-device-m) {
+        width: 984px;
+        height: 544px;
+        max-width: none;
+        padding-right: 40px;
+      }
     }
   }
 
@@ -108,10 +157,29 @@
     margin-top: 52px;
     max-width: calc(50% - 5px);
 
+    @media (max-width: $tablet-device-l) {
+      padding-right: 32px;
+      padding-left: 32px;
+    }
+
+    @media (max-width: $tablet-device-m) {
+      width: 100%;
+      max-width: 100%;
+      min-height: auto;
+      padding: 0;
+      margin-top: 40px;
+    }
+
     &--border {
       border: 1px solid #E6E6E6;
       box-shadow: 0 2px 8px #F1F3F5;
       border-radius: 4px;
+
+      @media (max-width: $tablet-device-m) {
+        padding: 32px 56px;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
     }
 
     & .egis-otb__task-item {
@@ -120,9 +188,29 @@
       margin-top: 0;
       max-width: 100%;
 
+      @media (max-width: $tablet-device-l) {
+        margin-top: 48px;
+
+        &:first-child {
+          margin-top: 0;
+        }
+      }
+
+      @media (max-width: $tablet-device-m) {
+        width: 100%;
+
+        &:nth-child(2) {
+          margin-top: 0;
+        }
+      }
+
       &--flex-col {
         flex-direction: column;
         align-items: flex-start;
+
+        @media (max-width: $tablet-device-m) {
+          width: calc(50% - 32px);
+        }
       }
     }
   }
@@ -135,8 +223,33 @@
       margin-top: 24px;
     }
 
-    &-img {
+    &-map {
       margin-top: 68px;
+      margin-left: 72px;
+      margin-right: 72px;
+
+      @media (max-width: $tablet-device-l) {
+        margin-left: 50px;
+        margin-right: 50px;
+      }
+
+      @media (max-width: $tablet-device-m) {
+        margin-left: 16px;
+        margin-right: 0;
+        overflow: scroll;
+      }
+    }
+
+    &-img {
+      display: block;
+      margin: auto;
+
+      @media (max-width: $tablet-device-m) {
+        width: 940px;
+        height: 483px;
+        max-width: none;
+        padding-right: 16px;
+      }
     }
   }
 
@@ -149,6 +262,16 @@
       background-image: url("/img/illustration_032.png");
       background-position: 125px 100%;
       background-repeat: no-repeat;
+
+      @media (max-width: $tablet-device-l) {
+        background-position: 73px;
+      }
+
+      @media (max-width: $tablet-device-m) {
+        flex-direction: column;
+        background-position: top right;
+        background-size: 376px 332px;
+      }
     }
 
     &-title {
@@ -159,12 +282,23 @@
     &-list {
       display: flex;
       flex-direction: column;
-      max-width: calc(50% - 80px);
+      width: calc(50% - 80px);
       font-size: 0.9em;
+
+      @media (max-width: $tablet-device-m) {
+        width: 100%;
+        margin-top: 112px;
+        padding-left: 56px;
+        padding-right: 56px;
+      }
     }
 
     &-item {
       margin-top: 88px;
+
+      @media (max-width: $tablet-device-m) {
+        margin-top: 72px;
+      }
 
       &:first-child {
         margin-top: 0;
@@ -173,7 +307,7 @@
       &:before {
         content: '';
         width: 64px;
-        height: 2px;
+        height: 4px;
         display: block;
         margin-bottom: 16px;
       }
@@ -196,21 +330,44 @@
     align-items: stretch;
     margin-top: 98px;
 
+    @media (max-width: $tablet-device-m) {
+      margin-top: 54px;
+      flex-direction: column;
+    }
+
     &-list {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+
+      @media (max-width: $tablet-device-m) {
+        flex-direction: row;
+      }
     }
 
     &-img {
       margin-right: 16px;
       border-radius: 4px;
       box-shadow: 0 2px 8px #F1F3F5;
+      max-width: 50%;
+
+      @media (max-width: $tablet-device-m) {
+        max-width: 100%;
+        width: 100%;
+      }
     }
 
     &-icon {
       width: 150px;
       margin-right: 40px;
+
+      @media (max-width: $tablet-device-l) {
+        margin-right: 22px;
+      }
+
+      @media (max-width: $tablet-device-m) {
+        width: 112px;
+      }
     }
 
     &-item {
@@ -221,6 +378,18 @@
       padding: 27px 49px;
       box-shadow: 0 2px 8px #F1F3F5;
       border-radius: 4px;
+
+      @media (max-width: $tablet-device-l) {
+        padding: 26px 24px 26px 31px;
+      }
+
+      @media (max-width: $tablet-device-m) {
+        font-size: 0.8em;
+
+        &:first-child {
+          margin-right: 16px;
+        }
+      }
     }
   }
 }

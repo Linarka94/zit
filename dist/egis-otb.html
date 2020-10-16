@@ -9,17 +9,17 @@
   <script src="/js/main.js"></script>
 </head>
 <body>
-<header class="header">
-  <div class="container container--header-footer container--flex">
-    <nav class="header__nav">
-      <a href="index.html" class="header__link">
-        <img class="header__logo" src="/img/ZIT_full.svg" alt="Логотип компании ЗИТ">
-      </a>
+<header class="header container container--header-footer  container--flex">
+  <nav class="header__nav">
+    <a href="index.html" class="header__link">
+      <img class="header__logo" src="/img/ZIT_full.svg" alt="Логотип компании ЗИТ">
+    </a>
+    <div class="header__link-wrap">
       <a href="" class="header__link">Компания</a>
       <a href="" class="header__link">Проекты</a>
       <a href="" class="header__link">Услуги</a>
       <a href="news.html" class="header__link">Новости</a>
-    </nav>
+    </div>
     <div class="header__item">
       <a href="" class="header__connect-link">Подключение к ЕГИС ОТБ</a>
       <input class="header__search-input" type="search" name="page__search" id="page__search">
@@ -28,7 +28,71 @@
       </button>
       <a href="" class="header__link header__link--color">Ru</a>
     </div>
-  </div>
+    <div class="header__burger" id="burgerButton">
+      <span class="header__burger-icon"></span>
+    </div>
+    <div class="header__burger-menu acc acc--one">
+      <div class="header__burger-item acc__item">
+        <h4 class="header__burger-title acc__title">
+          Компания
+        </h4>
+        <div class="acc__content">
+          <div class="header__burger-ripple">
+            <a href="about.html" class="footer__item-link">О компании</a>
+            <a href="job.html" class="footer__item-link">Карьера</a>
+            <a href="" class="footer__item-link">Пресс-центр</a>
+            <a href="" class="footer__item-link">Политика конфиденциальности</a>
+            <a href="" class="footer__item-link">Закупки</a>
+            <a href="" class="footer__item-link">FAQ</a>
+          </div>
+
+        </div>
+      </div>
+      <div class="header__burger-item acc__item">
+        <h4 class="header__burger-title acc__title">
+          Проекты
+        </h4>
+        <div class="acc__content">
+          <div class="header__burger-ripple">
+            <a href="egis-otb.html" class="footer__item-link">ЕГИС ОТБ</a>
+            <a href="" class="footer__item-link">СС ТМК</a>
+            <a href="" class="footer__item-link">АСУ ТК</a>
+            <a href="" class="footer__item-link">ЦПТК</a>
+            <a href="" class="footer__item-link">Суперсервис 22</a>
+            <a href="" class="footer__item-link">МШБД</a>
+            <a href="" class="footer__item-link">ЛПВАН</a>
+          </div>
+        </div>
+      </div>
+      <div class="header__burger-item acc__item">
+        <h4 class="header__burger-title acc__title">
+          Услуги
+        </h4>
+        <div class="acc__content">
+          <div class="header__burger-ripple">
+            <a href="" class="footer__item-link">Центр сертификации</a>
+            <a href="" class="footer__item-link">Аттестационный центр</a>
+            <a href="" class="footer__item-link">Центр кибер безопасности</a>
+            <a href="" class="footer__item-link">Сертификационный центр по линии</a>
+            <a href="" class="footer__item-link">МЧС и ФСБ</a>
+          </div>
+        </div>
+      </div>
+      <div class="header__burger-item acc__item">
+        <h4 class="header__burger-title acc__title">
+          Новости
+        </h4>
+        <div class="acc__content">
+          <div class="header__burger-ripple">
+            <a href="news.html" class="footer__item-link">Новости</a>
+            <a href="" class="footer__item-link">Публикации о нас</a>
+            <a href="presscontacts.html" class="footer__item-link">Для прессы</a>
+            <a href="articles.html" class="footer__item-link">Статьи</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
 </header>
 <ul class="breadcrumb container container--header-footer">
   <li class="breadcrumb__item"><a href="index.html" class="breadcrumb__link breadcrumb__link--back">Назад</a></li>
@@ -52,12 +116,12 @@
     <a href="" class="egis__link egis-otb__link">Подключение к подсистеме аттестации сил ОТБ</a>
   </div>
 </section>
-<div class="job__nav container">
-  <a href="egis-otb.html" class="job__nav-link job__nav-link--active">Обзор системы</a>
-  <a href="" class="job__nav-link">Развитие системы</a>
-  <a href="" class="job__nav-link">Подключение к ЕГИС ОТБ</a>
-  <a href="" class="job__nav-link">Порядок передачи данных</a>
-  <a href="" class="job__nav-link">Документация</a>
+<div class="page__nav container">
+  <a href="egis-otb.html" class="page__nav-link page__nav-link--active">Обзор системы</a>
+  <a href="" class="page__nav-link">Развитие системы</a>
+  <a href="" class="page__nav-link">Подключение к ЕГИС ОТБ</a>
+  <a href="" class="page__nav-link">Порядок передачи данных</a>
+  <a href="" class="page__nav-link">Документация</a>
 </div>
 <section class="page__block container">
   <h2 class="page__title">
@@ -108,18 +172,21 @@
   <h2 class="page__title container">
     Состав и структура ЕГИС ОТБ
   </h2>
-  <img src="/img/egis-otb1.svg" alt="" class="egis-otb__structure-map">
+  <div class="egis-otb__structure-map">
+    <img src="/img/egis-otb1.svg" alt="" class="egis-otb__structure-img">
+  </div>
 </section>
 <section class="page__block">
   <h2 class="page__title container">
     Описание ЕГИС ОТБ<br>(преимущества и ключевая информация о системе)
   </h2>
-  <div class="container container--flex">
+  <div class="container container--flex container--flex-col">
     <div class="egis-otb__description">
       <div class="egis-otb__task-item">
         <img src="/img/developing-it.svg" alt="" class="egis-otb__task-icon">
         <p class="egis-otb__task">
-          Основа единого защищенного закрытого информационного пространства федерального масштаба в области транспортной безопасности
+          Основа единого защищенного закрытого информационного пространства федерального масштаба в области транспортной
+          безопасности
         </p>
       </div>
       <div class="egis-otb__task-item">
@@ -131,13 +198,15 @@
       <div class="egis-otb__task-item">
         <img src="/img/ib.svg" alt="" class="egis-otb__task-icon">
         <p class="egis-otb__task">
-          Территориально-распределенная архитектура, автоматизированные объекты которой размещены на территории всех федеральных округов Российской Федерации
+          Территориально-распределенная архитектура, автоматизированные объекты которой размещены на территории всех
+          федеральных округов Российской Федерации
         </p>
       </div>
       <div class="egis-otb__task-item">
         <img src="/img/book-logo.svg" alt="" class="egis-otb__task-icon">
         <p class="egis-otb__task">
-          Защищенное исполнение для хранения конфиденциальных и персональных данных, а также сведений, составляющих государственную тайну
+          Защищенное исполнение для хранения конфиденциальных и персональных данных, а также сведений, составляющих
+          государственную тайну
         </p>
       </div>
     </div>
@@ -145,7 +214,8 @@
       <div class="egis-otb__task-item egis-otb__task-item--flex-col">
         <p class="egis-otb__task-value">8</p>
         <p class="egis-otb__task">
-          федеральных органов исполнительной власти, десятки их территориальных подразделений, сотни специализированных организаций
+          федеральных органов исполнительной власти, десятки их территориальных подразделений, сотни специализированных
+          организаций
         </p>
       </div>
       <div class="egis-otb__task-item egis-otb__task-item--flex-col">
@@ -157,13 +227,15 @@
       <div class="egis-otb__task-item egis-otb__task-item--flex-col">
         <p class="egis-otb__task-value">8500</p>
         <p class="egis-otb__task">
-          перевозчиков, субъектов транспортной инфраструктуры, глобальных и региональных распределительных систем и систем бронирования перевозок
+          перевозчиков, субъектов транспортной инфраструктуры, глобальных и региональных распределительных систем и
+          систем бронирования перевозок
         </p>
       </div>
       <div class="egis-otb__task-item egis-otb__task-item--flex-col">
         <p class="egis-otb__task-value">>100<span class="egis-otb__task-value--fs">тыс.</span></p>
         <p class="egis-otb__task">
-          объектов транспортной инфраструктуры и транспортных средств, десятки тысяч субъектов транспортной инфраструктуры, тысячи перевозчиков, сотни органов аттестации, аттестующих и специализированных организаций
+          объектов транспортной инфраструктуры и транспортных средств, десятки тысяч субъектов транспортной
+          инфраструктуры, тысячи перевозчиков, сотни органов аттестации, аттестующих и специализированных организаций
         </p>
       </div>
     </div>
@@ -175,8 +247,13 @@
       Зарубежные источники данных ЕГИС ОТБ
     </h2>
     <p class="page__text">
-      Функциональные возможности ЕГИС ОТБ сопоставимы с передовыми зарубежными аналогами, при она обеспечивает охват более широкого, чем в других странах,  круга субъектов транспортной деятельности, включая субъектов транспортной инфраструктуры и перевозчиков автомобильного, воздушного, железнодорожного, морского и внутреннего водного транспорта при осуществлении как международных, так и внутренних межсубъектовых перевозок.
+      Функциональные возможности ЕГИС ОТБ сопоставимы с передовыми зарубежными аналогами, при она обеспечивает охват
+      более широкого, чем в других странах, круга субъектов транспортной деятельности, включая субъектов транспортной
+      инфраструктуры и перевозчиков автомобильного, воздушного, железнодорожного, морского и внутреннего водного
+      транспорта при осуществлении как международных, так и внутренних межсубъектовых перевозок.
     </p>
+  </div>
+  <div class="egis-otb__external-map">
     <img src="/img/external-source.png" alt="Схематичное изображение источников" class="egis-otb__external-img">
   </div>
 </section>
@@ -185,16 +262,21 @@
     Основания создания ЕГИС ОТБ
   </h2>
   <div class="container container--flex egis-otb__create-text">
-    <h4 class="egis-otb__create-title">ЕГИС ОТБ  -  приоритетное направление программы мер по обеспечению безопасности населения на транспорте, основа ее системы информационного обеспечения.</h4>
+    <h4 class="egis-otb__create-title">ЕГИС ОТБ - приоритетное направление программы мер по обеспечению безопасности
+      населения на транспорте, основа ее системы информационного обеспечения.</h4>
     <div class="egis-otb__create-list">
       <p class="egis-otb__create-item">
-        <b>Во исполнение Указа Президента Российской Федерации</b><br>от 31 марта 2010 г. №403 в рамках «Комплексной программы обеспечения безопасности населения на транспорте», утвержденной распоряжением Правительства Российской Федерации от 30 июля 2010 г. №1285 р.
+        <b>Во исполнение Указа Президента Российской Федерации</b><br>от 31 марта 2010 г. №403 в рамках «Комплексной
+        программы обеспечения безопасности населения на транспорте», утвержденной распоряжением Правительства Российской
+        Федерации от 30 июля 2010 г. №1285 р.
       </p>
       <p class="egis-otb__create-item">
-        <b>В соответствии с российским законодательством:</b><br>Статья 11 Федерального закона от 09.02.2007 г. №16-03 «О транспортной безопасности»
+        <b>В соответствии с российским законодательством:</b><br>Статья 11 Федерального закона от 09.02.2007 г. №16-03
+        «О транспортной безопасности»
       </p>
       <p class="egis-otb__create-item">
-        <b>Единственный исполнитель и оператор:</b><br>ФГУП «ЗащитаИнфоТранс»<br>(распоряжение Президента РФ №777-рп 2011 года)
+        <b>Единственный исполнитель и оператор:</b><br>ФГУП «ЗащитаИнфоТранс»<br>(распоряжение Президента РФ №777-рп
+        2011 года)
       </p>
     </div>
   </div>
@@ -212,7 +294,7 @@
       </div>
       <div class="egis-otb__reward-item">
         <img src="/img/reward2.png" alt="Фотография премии" class="egis-otb__reward-icon">
-        Лауреат Национальной отраслевой премии «За Укрепление Безопасности России»  ЗУБР-2015
+        Лауреат Национальной отраслевой премии «За Укрепление Безопасности России» ЗУБР-2015
       </div>
     </div>
   </div>
@@ -230,69 +312,79 @@
   <div class="footer__info">
     <div class="footer__wrap container container--header-footer">
       <div class="footer__item">
-        <h4 class="footer__item-title">
+        <h4 class="footer__item-title footer__acc-title">
           Компания
         </h4>
-        <div class="footer__item-ripple">
-          <a href="about.html" class="footer__item-link">О компании</a>
-          <a href="job.html" class="footer__item-link">Карьера</a>
-          <a href="" class="footer__item-link">Пресс-центр</a>
-          <a href="" class="footer__item-link">Политика конфиденциальности</a>
-          <a href="" class="footer__item-link">Закупки</a>
-          <a href="" class="footer__item-link">FAQ</a>
+        <div class="footer__acc-content">
+          <div class="footer__item-ripple">
+            <a href="about.html" class="footer__item-link">О компании</a>
+            <a href="job.html" class="footer__item-link">Карьера</a>
+            <a href="" class="footer__item-link">Пресс-центр</a>
+            <a href="" class="footer__item-link">Политика конфиденциальности</a>
+            <a href="" class="footer__item-link">Закупки</a>
+            <a href="" class="footer__item-link">FAQ</a>
+          </div>
         </div>
       </div>
       <div class="footer__item">
-        <h4 class="footer__item-title">
+        <h4 class="footer__item-title footer__acc-title">
           Проекты
         </h4>
-        <div class="footer__item-ripple">
-          <a href="egis-otb.html" class="footer__item-link">ЕГИС ОТБ</a>
-          <a href="" class="footer__item-link">СС ТМК</a>
-          <a href="" class="footer__item-link">АСУ ТК</a>
-          <a href="" class="footer__item-link">ЦПТК</a>
-          <a href="" class="footer__item-link">Суперсервис 22</a>
-          <a href="" class="footer__item-link">МШБД</a>
-          <a href="" class="footer__item-link">ЛПВАН</a>
+        <div class="footer__acc-content">
+          <div class="footer__item-ripple">
+            <a href="egis-otb.html" class="footer__item-link">ЕГИС ОТБ</a>
+            <a href="" class="footer__item-link">СС ТМК</a>
+            <a href="" class="footer__item-link">АСУ ТК</a>
+            <a href="" class="footer__item-link">ЦПТК</a>
+            <a href="" class="footer__item-link">Суперсервис 22</a>
+            <a href="" class="footer__item-link">МШБД</a>
+            <a href="" class="footer__item-link">ЛПВАН</a>
+          </div>
         </div>
       </div>
       <div class="footer__item">
-        <h4 class="footer__item-title">
+        <h4 class="footer__item-title footer__acc-title">
           Услуги
         </h4>
-        <div class="footer__item-ripple">
-          <a href="" class="footer__item-link">Центр сертификации</a>
-          <a href="" class="footer__item-link">Аттестационный центр</a>
-          <a href="" class="footer__item-link">Центр кибер безопасности</a>
-          <a href="" class="footer__item-link">Сертификационный центр по линии</a>
-          <a href="" class="footer__item-link">МЧС и ФСБ</a>
+        <div class="footer__acc-content">
+          <div class="footer__item-ripple">
+            <a href="" class="footer__item-link">Центр сертификации</a>
+            <a href="" class="footer__item-link">Аттестационный центр</a>
+            <a href="" class="footer__item-link">Центр кибер безопасности</a>
+            <a href="" class="footer__item-link">Сертификационный центр по линии</a>
+            <a href="" class="footer__item-link">МЧС и ФСБ</a>
+          </div>
         </div>
       </div>
       <div class="footer__item-social">
         <div class="footer__item">
-          <h4 class="footer__item-title">
+          <h4 class="footer__item-title footer__acc-title">
             Контакты
           </h4>
-          <div class="footer__item-ripple">
-            <address class="footer__item-link">117105, Москва, Варшавское шоссе, дом 9, строение 1 (корпус Мещерин)
-            </address>
-            <a href="tel:+74953802150" class="footer__item-link" title="Позвонить?">+7 (495) 380-21-50</a>
+          <div class="footer__acc-content">
+            <div class="footer__item-ripple">
+              <address class="footer__item-link">117105, Москва, Варшавское шоссе, дом 9, строение 1 (корпус Мещерин)
+              </address>
+              <a href="tel:+74953802150" class="footer__item-link" title="Позвонить?">+7 (495) 380-21-50</a>
+            </div>
           </div>
         </div>
         <div class="footer__social">
           <a href="" class="footer__social-link">
-            <img class="footer__social-link-icon" src="/img/instagram.svg" alt="Иконка Instagram" title="Перейти на страницу Instagram">
+            <img class="footer__social-link-icon" src="/img/instagram.svg" alt="Иконка Instagram"
+                 title="Перейти на страницу Instagram">
           </a>
           <a href="" class="footer__social-link">
-            <img class="footer__social-link-icon" src="/img/twitter.svg" alt="Иконка Twitter" title="Перейти на страницу Twitter">
+            <img class="footer__social-link-icon" src="/img/twitter.svg" alt="Иконка Twitter"
+                 title="Перейти на страницу Twitter">
           </a>
         </div>
       </div>
-      </div>
-
+    </div>
     <div class="footer__copyright">
       <p class="container container--header-footer footer__copyright-text">
-        © 1996—2020, ФГУП «ЗащитаИнфоТранс». Все права защищены. При использовании материалов – ссылка на сайт www.z-it.ru обязательна
+        © 1996—2020, ФГУП «ЗащитаИнфоТранс». Все права защищены.
+        <span class="footer__copyright-text--block">При использовании материалов – ссылка на сайт www.z-it.ru обязательна</span>
       </p>
     </div>
   </div>

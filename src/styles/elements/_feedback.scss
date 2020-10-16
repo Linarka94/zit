@@ -2,11 +2,40 @@
   margin-top: 48px;
   padding-bottom: 45px;
 
+  @media (max-width: $tablet-device-m) {
+    flex-wrap: wrap;
+  }
+
   &__text {
     font-size: 0.9em;
 
     &:first-child {
       max-width: 580px;
+
+      @media (max-width: $tablet-device-l) {
+        max-width: 368px;
+      }
+
+      @media (max-width: $tablet-device-m) {
+        max-width: none;
+        flex-grow: 1;
+      }
+    }
+
+    &:not(:first-child) {
+
+      @media (max-width: $tablet-device-m) {
+        max-width: 296px;
+        width: 100%;
+        margin-top: 42px;
+      }
+    }
+
+    &:last-child {
+
+      @media (max-width: $tablet-device-m) {
+        margin-top: 40px;
+      }
     }
 
     &--fw700 {

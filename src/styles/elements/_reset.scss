@@ -22,10 +22,13 @@ $mobile-device: 767px;
 $tablet-device-m: 991px;
 $tablet-device-l: 1024px;
 
-body {
-  font-family: var(--ff-OpenSans);
+html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--ff-OpenSans);
   font-weight: 400;
   font-size: var(--font-size);
   line-height: 1.5;

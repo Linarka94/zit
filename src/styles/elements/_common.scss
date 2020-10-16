@@ -9,6 +9,11 @@
     padding-right: 72px;
   }
 
+  @media (max-width: $tablet-device-m) {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
   &--header-footer {
     padding: 0 40px;
 
@@ -16,12 +21,23 @@
       padding-left: 8px;
       padding-right: 8px;
     }
+
+    @media (max-width: $tablet-device-m) {
+      padding-left: 24px;
+      padding-right: 24px;
+    }
   }
 
   &--flex {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    &-col {
+      @media (max-width: $tablet-device-m) {
+        flex-direction: column;
+      }
+    }
   }
 
   &--align-stretch {
@@ -29,11 +45,20 @@
   }
 }
 
+a.page__subtitle:hover {
+  text-decoration: underline;
+}
+
 .page {
 
   &__block {
     padding-top: 88px;
     padding-bottom: 96px;
+
+    @media (max-width: $tablet-device-l) {
+      padding-top: 64px;
+      padding-bottom: 64px;
+    }
   }
 
   &__title {
@@ -49,6 +74,7 @@
     font-size: 1.2em;
     text-decoration: none;
     color: var(--text-color);
+    transition: var(--transition);
 
     &:after {
       content: '';
@@ -69,6 +95,43 @@
   &__text {
     font-family: var(--ff-OpenSans);
     font-size: 0.8em;
+  }
+
+  &__nav {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+
+    &-link {
+      text-align: center;
+      text-decoration: none;
+      font-size: 0.7em;
+      padding: 8px 12px;
+      margin-right: 16px;
+      color: var(--text-color);
+      transition: var(--transition);
+      box-shadow: 0px 2px 8px #F1F3F5;
+      border-radius: 22px;
+
+      @media (max-width: $tablet-device-l) {
+        padding: 8px;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &--active {
+        color: var(--text-white);
+        background-color: var(--bg-blue);
+      }
+
+      &:hover {
+        background-color: var(--link-hover);
+        color: var(--text-white);
+      }
+    }
   }
 }
 
@@ -105,6 +168,10 @@
 
     &:hover {
       filter: brightness(0.7);
+    }
+
+    &:active {
+      opacity: 0.8;
     }
 
     &--back {

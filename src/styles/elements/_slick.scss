@@ -26,12 +26,20 @@
     @media (max-width: $tablet-device-l) {
       right: calc(3% - 32px);
     }
+
+    @media (max-width: $tablet-device-m) {
+      display: none !important;
+    }
   }
 
   &.slick-prev {
     left: calc(0% - 32px);
     background-image: url("/img/icon/Arrow/Right/arrow-right-bl.svg");
     transform: scale(-1, 1);
+
+    @media (max-width: $tablet-device-m) {
+      display: none !important;
+    }
   }
 
   &:focus,
@@ -54,8 +62,13 @@
   text-align: center;
   position: absolute;
   bottom: 10px;
-  left: 50%;
+  left: 61%;
+  padding: 0;
   transform: translateX(-50%);
+
+  @media (max-width: $tablet-device-l) {
+    left: 65%;
+  }
 
   & li button {
     font-size: 0;
@@ -67,6 +80,16 @@
     margin: 0 14px;
     position: relative;
     cursor: pointer;
+
+    @media (max-width: $tablet-device-l) {
+      margin-left: 8px;
+      margin-right: 8px;
+    }
+
+    @media (max-width: $tablet-device-m) {
+      margin-left: 4px;
+      margin-right: 4px;
+    }
 
     &:before {
       content: '';
@@ -105,5 +128,16 @@
     @media (max-width: $tablet-device-l) {
       right: calc(13% - 32px);
     }
+
+    @media (max-width: $tablet-device-m) {
+      display: none !important;
+    }
+  }
+
+  & .slick-arrow.slick-prev {
+    @media (max-width: $tablet-device-m) {
+      display: none !important;
+    }
   }
 }
+
