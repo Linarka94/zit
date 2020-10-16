@@ -1,1 +1,23 @@
 @import 'node_modules/select2/src/scss/core';
+
+.select2-selection {
+  &--single {
+    background-color: #F2F7F9 !important;
+    border: none !important;
+    height: 56px !important;
+    padding: 16px;
+  }
+  &__rendered {
+    padding: 0px;
+    font-size: 16px;
+    line-height: 24px !important;
+    height: 24px !important;
+  }
+  &__arrow {
+    top: 15px !important;
+    right: 12px !important;
+    b {
+      border-color: #4A4A4A transparent transparent transparent !important;
+    }
+  }
+}
