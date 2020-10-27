@@ -6,6 +6,10 @@
     &:first-child {
       margin-top: 0;
     }
+
+    @media (max-width: $mobile-device) {
+      margin-top: 16px;
+    }
   }
 
   &__content {
@@ -24,6 +28,10 @@
 
       &:first-child {
         margin-top: 0;
+      }
+
+      @media (max-width: $mobile-device) {
+        margin-top: 24px;
       }
     }
   }
@@ -45,6 +53,11 @@
       min-height: 88px;
     }
 
+    @media (max-width: $mobile-device) {
+      font-size: 0.7em;
+      padding: 8px 56px 8px 16px;
+    }
+
     &:after {
       content: '';
       width: 16px;
@@ -55,6 +68,10 @@
       position: absolute;
       right: 32px;
       transition: var(--transition);
+
+      @media (max-width: $mobile-device) {
+        right: 16px;
+      }
     }
 
     &--active:after {

@@ -1,6 +1,10 @@
 .presscontacts {
   margin-top: 68px;
 
+  @media (max-width: $mobile-device) {
+    margin-top: 45px;
+  }
+
   &__list {
     margin-top: 37px;
     display: flex;
@@ -21,6 +25,10 @@
 
       & .page__title {
         padding-bottom: 32px;
+
+        @media (max-width: $mobile-device) {
+          padding-bottom: 17px;
+        }
       }
 
       &:last-child .page__title {
@@ -41,11 +49,23 @@
         flex-direction: row;
       }
 
+      & .feedback__text {
+
+        @media (max-width: $mobile-device) {
+          font-size: 0.7em;
+          width: calc(50% - 8px);
+        }
+      }
+
       & .feedback__text:first-child {
         margin-right: 64px;
 
         @media (max-width: $tablet-device-l) {
           margin-right: 0;
+        }
+
+        @media (max-width: $mobile-device) {
+          margin-right: 16px;
         }
       }
 
@@ -66,18 +86,41 @@
     margin-top: 32px;
     display: flex;
     align-items: center;
+
+    @media (max-width: $mobile-device) {
+      flex-direction: column;
+    }
   }
 
   &__link {
     padding: 9px 47px;
     margin-right: 56px;
     font-weight: 600;
+
+    @media (max-width: $mobile-device) {
+      margin-right: 0;
+      font-size: 0.8em;
+      padding-left: 0;
+      padding-right: 0;
+      width: 100%;
+      display: block;
+      max-width: 288px;
+    }
   }
 
-  &__download-doc {
-    text-decoration: none;
-    color: var(--link-color);
-    font-size: 0.7em;
+  &__download {
+    display: flex;
+    align-items: center;
+
+    @media (max-width: $mobile-device) {
+      margin-top: 32px;
+    }
+
+    &-doc {
+      text-decoration: none;
+      color: var(--link-color);
+      font-size: 0.7em;
+    }
   }
 
   &__direction {
@@ -86,10 +129,22 @@
     justify-content: space-between;
     align-items: stretch;
 
+    @media (max-width: $mobile-device) {
+      flex-direction: column;
+    }
+
     &-item {
       display: flex;
       flex-direction: column;
       width: calc(50% - 8px);
+
+      @media (max-width: $mobile-device) {
+        width: 100%;
+
+        &:not(:first-child) {
+          margin-top: 48px;
+        }
+      }
     }
 
     &-people {
@@ -108,6 +163,10 @@
       margin-top: 24px;
       font-size: 1.1em;
       font-weight: 700;
+
+      @media (max-width: $mobile-device) {
+        font-size: 0.9em;
+      }
     }
 
     &-bio {
@@ -120,6 +179,10 @@
       margin-top: 32px;
       display: flex;
       align-items: center;
+
+      @media (max-width: $mobile-device) {
+        margin-top: 16px;
+      }
     }
   }
 }

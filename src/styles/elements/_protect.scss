@@ -5,6 +5,11 @@
     padding-bottom: 65px;
     flex-wrap: wrap;
 
+    @media (max-width: $mobile-device) {
+      padding-top: 32px;
+      padding-bottom: 80px;
+    }
+
     &-item {
       display: flex;
       width: calc(50% - 32px);
@@ -18,11 +23,20 @@
         }
       }
 
+      @media (max-width: $mobile-device) {
+        flex-direction: column;
+        margin-top: 32px;
+      }
+
       &:nth-child(n+3) {
         margin-top: 72px;
 
         @media (max-width: $tablet-device-l) {
           margin-top: 16px;
+
+          @media (max-width: $mobile-device) {
+            margin-top: 32px;
+          }
         }
       }
     }
@@ -33,6 +47,10 @@
     font-weight: 700;
     color: var(--link-color);
     margin-right: 24px;
+
+    @media (max-width: $mobile-device) {
+      margin-right: 0;
+    }
   }
 
   &__doc {
@@ -66,6 +84,10 @@
       color: var(--link-color);
       transition: var(--transition);
 
+      @media (max-width: $mobile-device) {
+        font-size: 0.6em;
+      }
+
       &:hover {
         color: var(--link-hover);
       }
@@ -80,6 +102,10 @@
       margin-top: 2px;
       color: var(--tooltip-color);
       font-size: 0.7em;
+
+      @media (max-width: $mobile-device) {
+        font-size: 0.8em;
+      }
     }
   }
 }

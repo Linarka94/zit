@@ -4,11 +4,20 @@
   display: flex;
   align-items: stretch;
 
+  @media (max-width: $mobile-device) {
+    flex-direction: column;
+  }
+
   &__team {
     width: 50%;
     display: flex;
     align-items: center;
     overflow: hidden;
+
+    @media (max-width: $mobile-device) {
+      width: 100%;
+      height: 320px !important;
+    }
   }
 
   &__wrap {
@@ -22,6 +31,11 @@
     @media (max-width: $tablet-device-m) {
       padding-top: 70px;
       width: 60%;
+    }
+
+    @media (max-width: $mobile-device) {
+      width: 100%;
+      padding-top: 17px;
     }
 
     &:before {
@@ -54,6 +68,11 @@
   &__description {
     font-weight: 600;
     margin-top: 18px;
+
+    @media (max-width: $mobile-device) {
+      font-size: 0.7em;
+      font-weight: 400;
+    }
   }
 
   &__link {
@@ -76,6 +95,10 @@
 
     &:active {
       opacity: 0.8;
+    }
+
+    @media (max-width: $mobile-device) {
+      font-weight: 600;
     }
   }
 }

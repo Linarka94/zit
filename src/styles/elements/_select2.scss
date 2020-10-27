@@ -2,8 +2,15 @@
 
 .select2-container {
 
-  &--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
-    border-color: transparent transparent #4A4A4A transparent !important;
+  &--default {
+
+    &.select2-container--open .select2-selection--single .select2-selection__arrow b {
+      border-color: transparent transparent #4A4A4A transparent !important;
+    }
+  }
+
+  & .select2-results__option {
+    font-size: 16px !important;
   }
 }
 
@@ -17,8 +24,8 @@
   }
 
   &__rendered {
-    padding: 0;
-    font-size: 16px;
+    padding: 0 !important;
+    font-size: 16px !important;
     line-height: 24px !important;
     height: 24px !important;
   }
@@ -29,6 +36,101 @@
 
     b {
       border-color: #4A4A4A transparent transparent transparent !important;
+    }
+  }
+}
+
+.news__all-setting .select2 {
+
+  & .select2-selection {
+
+    &--single {
+      background-color: #FFFFFF !important;
+      border-radius: 2px !important;
+      border: 1px solid #F3F3F5 !important;
+    }
+
+    &__arrow {
+
+      b {
+        border-color: #009BDE transparent transparent transparent !important;
+      }
+    }
+  }
+
+  &.select2-container {
+
+    &--default {
+
+      &.select2-container--open .select2-selection--single .select2-selection__arrow b {
+        border-color: transparent transparent #009BDE transparent !important;
+      }
+    }
+  }
+}
+
+.news__all-head .select2 {
+
+  &:first-of-type {
+    margin-right: 64px !important;
+
+    & .select2-selection {
+
+      &--single {
+        padding-left: 25px !important;
+      }
+
+      &__arrow {
+        right: -35px !important;
+      }
+    }
+  }
+
+  & .select2-selection {
+
+    &--single {
+      background-color: #FFFFFF !important;
+      border-radius: 16px !important;
+      border: 1px solid #F3F3F5 !important;
+      width: 112px;
+      height: 32px !important;
+      padding-top: 3px !important;
+    }
+
+    &__arrow {
+      top: 3px !important;
+      right: -20px !important;
+
+      b {
+        border-color: #009BDE transparent transparent transparent !important;
+      }
+    }
+  }
+
+  &.select2-container {
+
+    &--default {
+
+      &.select2-container--open .select2-selection--single .select2-selection__arrow b {
+        border-color: transparent transparent #009BDE transparent !important;
+      }
+    }
+  }
+
+  @media (max-width: $tablet-device-m) {
+    display: none;
+  }
+}
+
+.license__select > .select2 {
+
+  &:first-of-type {
+
+    & .select2-selection {
+
+      &__arrow {
+        right: -20px !important;
+      }
     }
   }
 }

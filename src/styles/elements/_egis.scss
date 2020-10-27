@@ -17,6 +17,11 @@
       background-size: 311px 266px;
       background-position: right top;
     }
+
+    @media (max-width: $mobile-device) {
+      background-position: center;
+      background-size: 288px 246px;
+    }
   }
 
   &__description {
@@ -25,6 +30,10 @@
 
     @media (max-width: $tablet-device-l) {
       max-width: 432px;
+    }
+
+    @media (max-width: $mobile-device) {
+      max-width: none;
     }
   }
 
@@ -43,8 +52,17 @@
     margin-right: 32px;
     transition: var(--transition);
 
+    @media (max-width: $mobile-device) {
+      margin-right: 0;
+      max-width: 288px;
+    }
+
     &:last-child {
       margin-right: 0;
+
+      @media (max-width: $mobile-device) {
+        margin-top: 16px;
+      }
     }
 
     &:hover {
@@ -63,6 +81,11 @@
 
       @media (max-width: $tablet-device-m) {
         padding-bottom: 0;
+      }
+
+      @media (max-width: $mobile-device) {
+        flex-direction: column;
+        margin-top: 300px;
       }
     }
   }

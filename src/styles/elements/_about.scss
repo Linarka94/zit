@@ -4,12 +4,20 @@
   display: flex;
   flex-direction: column;
 
+  @media (max-width: $mobile-device) {
+    padding-top: 40px;
+  }
+
   &__title {
     text-align: left;
   }
 
   &__description {
     margin-top: 41px;
+
+    @media (max-width: $mobile-device) {
+      margin-top: 24px;
+    }
   }
 
   &__link {
@@ -21,6 +29,16 @@
     @media (max-width: $tablet-device-m) {
       margin-top: 32px;
     }
+
+    @media (max-width: $mobile-device) {
+      margin-top: 24px;
+      font-size: 0.8em;
+      font-weight: 600;
+      padding: 13px 0;
+      display: block;
+      max-width: 288px;
+      width: 100%;
+    }
   }
 
   &__features {
@@ -29,6 +47,12 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+
+    @media (max-width: $mobile-device) {
+      margin-top: 28px;
+      padding-bottom: 41px;
+      flex-direction: column;
+    }
 
     &-item {
       display: flex;
@@ -52,6 +76,15 @@
           margin-top: 56px;
         }
       }
+
+      @media (max-width: $mobile-device) {
+        width: 100%;
+        padding: 0;
+
+        &:nth-child(n+2) {
+          margin-top: 32px;
+        }
+      }
     }
 
     &-icon {
@@ -62,6 +95,11 @@
     &-head {
       font-size: 0.9em;
       font-weight: 600;
+
+      @media (max-width: $mobile-device) {
+        font-weight: 400;
+        font-size: 0.7em;
+      }
     }
   }
 
@@ -74,15 +112,27 @@
     background-color: var(--bg-gray);
     padding-top: 60px;
 
+    @media (max-width: $mobile-device) {
+      padding-top: 40px;
+    }
+
     & .slick-dots li button {
       &:before {
         border-color: var(--bg-blue);
+
+        @media (max-width: $mobile-device) {
+          border-color: var(--bg-white);
+        }
       }
     }
 
     & .slick-dots li.slick-active button {
       &:before {
         background-color: var(--bg-blue);
+
+        @media (max-width: $mobile-device) {
+          background-color: var(--bg-white);
+        }
       }
     }
   }
@@ -90,14 +140,27 @@
   &__slider {
     padding-top: 70px;
 
+    @media (max-width: $mobile-device) {
+      padding-top: 35px;
+    }
+
     &-slide {
       display: flex !important;
       justify-content: space-between;
+
+      @media (max-width: $mobile-device) {
+        flex-direction: column-reverse;
+      }
 
       & img {
         width: 50%;
         max-width: 440px;
         margin-right: 23px;
+
+        @media (max-width: $mobile-device) {
+          width: 100%;
+          margin: 28px auto 0;
+        }
       }
     }
 
@@ -110,6 +173,10 @@
       @media (max-width: $tablet-device-m) {
         padding-top: 0;
       }
+
+      @media (max-width: $mobile-device) {
+        width: 100%;
+      }
     }
   }
 
@@ -118,15 +185,30 @@
     font-weight: 700;
     font-size: 1.2em;
 
+    @media (max-width: $mobile-device) {
+      font-family: var(--ff-OpenSans);
+      font-weight: 600;
+      font-size: 0.9em;
+    }
+
     &-author {
       font-weight: 600;
       margin-top: 60px;
+
+      @media (max-width: $mobile-device) {
+        margin-top: 16px;
+        font-size: 0.8em;
+      }
 
       &--bio {
         display: block;
         font-size: 0.8em;
         font-weight: 400;
         margin-top: 4px;
+
+        @media (max-width: $mobile-device) {
+          font-size: 0.9em;
+        }
       }
     }
   }
@@ -135,6 +217,20 @@
     padding-top: 63px;
     position: relative;
     text-align: center;
+    padding-right: 0;
+
+    @media (max-width: $tablet-device-l) {
+      padding-right: 0;
+    }
+
+    @media (max-width: $tablet-device-m) {
+      padding-right: 0;
+    }
+
+    @media (max-width: $mobile-device) {
+      padding-right: 0;
+      padding-top: 40px;
+    }
 
     &-link {
       border-radius: 4px;
@@ -151,6 +247,15 @@
         margin-top: 32px;
       }
 
+      @media (max-width: $mobile-device) {
+        font-weight: 600;
+        max-width: 288px;
+        padding-left: 0;
+        padding-right: 0;
+        width: 100%;
+        margin-right: 16px;
+      }
+
       &:hover {
         background-color: var(--link-hover);
       }
@@ -162,6 +267,11 @@
   }
 
   &__img {
+
+    @media (max-width: $mobile-device) {
+      width: 232px;
+      height: 175px;
+    }
 
     &-item {
       margin-right: 16px;
@@ -175,6 +285,10 @@
 
     @media (max-width: $tablet-device-l) {
       justify-content: space-between;
+    }
+
+    @media (max-width: $mobile-device) {
+      margin-top: 48px;
     }
 
     &-item {
@@ -203,6 +317,14 @@
           margin-top: 16px;
         }
       }
+
+      @media (max-width: $mobile-device) {
+        width: 100%;
+
+        &:not(:first-child) {
+          margin-top: 16px;
+        }
+      }
     }
 
     &-question {
@@ -213,6 +335,11 @@
       width: 24px;
       height: 24px;
 
+      @media (max-width: $mobile-device) {
+        min-width: 20px;
+        min-height: 20px;
+      }
+
       &-bg {
         display: flex;
         justify-content: center;
@@ -222,6 +349,13 @@
         padding: 14px;
         width: 56px;
         height: 56px;
+
+        @media (max-width: $mobile-device) {
+          margin-left: 16px;
+          width: 40px;
+          height: 40px;
+          padding: 10px;
+        }
       }
     }
   }

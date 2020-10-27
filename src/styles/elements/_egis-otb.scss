@@ -9,15 +9,32 @@
   color: var(--text-white);
   align-items: flex-start;
 
+  @media (max-width: $mobile-device) {
+    flex-direction: column;
+    padding-top: 32px;
+    padding-bottom: 127px;
+    background-size: auto;
+    background-position: left bottom;
+  }
+
   &__title {
     max-width: 50%;
     display: flex;
     flex-direction: column;
+
+    @media (max-width: $mobile-device) {
+      max-width: none;
+    }
   }
 
   &__subtitle {
     font-size: 0.9em;
     margin-top: 18px;
+
+    @media (max-width: $mobile-device) {
+      font-size: 0.7em;
+      margin-top: 8px;
+    }
   }
 
   &__link {
@@ -29,6 +46,10 @@
 
     @media (max-width: $tablet-device-m) {
       max-width: 320px;
+    }
+
+    @media (max-width: $mobile-device) {
+      margin-top: 16px;
     }
 
     &:last-child {
@@ -50,6 +71,10 @@
     &-wrap {
       display: flex;
       flex-direction: column;
+
+      @media (max-width: $mobile-device) {
+        margin-top: 48px;
+      }
     }
   }
 
@@ -60,6 +85,10 @@
       font-size: 0.8em;
     }
 
+    @media (max-width: $mobile-device) {
+      font-size: 0.7em;
+    }
+
     &-wrap {
       display: flex;
       justify-content: space-between;
@@ -68,6 +97,11 @@
 
       @media (max-width: $tablet-device-m) {
         margin-top: 87px;
+      }
+
+      @media (max-width: $mobile-device) {
+        margin-top: 40px;
+        flex-direction: column;
       }
     }
 
@@ -88,15 +122,15 @@
       padding-bottom: 55px;
       border-bottom: 1px solid #DAEBF7;
 
-      @media (max-width: $tablet-device-m) {
-        width: calc(50% - 15px);
-      }
-
       &:nth-of-type(n+3) {
         margin-top: 64px;
 
         @media (max-width: $tablet-device-l) {
           margin-top: 54px;
+
+          @media (max-width: $mobile-device) {
+            margin-top: 32px;
+          }
         }
       }
 
@@ -107,6 +141,15 @@
       @media (max-width: $tablet-device-m) {
         padding-bottom: 0;
         border-bottom: none;
+        width: calc(50% - 15px);
+      }
+
+      @media (max-width: $mobile-device) {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 32px;
+        max-width: none;
+        align-items: flex-start;
       }
     }
 
@@ -125,8 +168,6 @@
     background-color: var(--bg-light);
 
     &-map {
-      margin-left: 40px;
-      margin-right: 40px;
       margin-top: 32px;
 
       @media (max-width: $tablet-device-m) {
@@ -144,6 +185,11 @@
         height: 544px;
         max-width: none;
         padding-right: 40px;
+        padding-left: 40px;
+      }
+
+      @media (max-width: $mobile-device) {
+        padding-left: 16px;
       }
     }
   }
@@ -180,6 +226,14 @@
         flex-direction: row;
         flex-wrap: wrap;
       }
+
+      @media (max-width: $mobile-device) {
+        border-color: transparent;
+        box-shadow: none;
+        overflow: auto;
+        flex-wrap: nowrap;
+        padding: 0;
+      }
     }
 
     & .egis-otb__task-item {
@@ -201,7 +255,20 @@
 
         &:nth-child(2) {
           margin-top: 0;
+
+          @media (max-width: $mobile-device) {
+            margin-top: 48px;
+          }
         }
+      }
+
+      @media (max-width: $mobile-device) {
+        flex-direction: row;
+        margin-top: 48px;
+      }
+
+      & .egis-otb__task-icon {
+        margin-right: 24px;
       }
 
       &--flex-col {
@@ -210,6 +277,28 @@
 
         @media (max-width: $tablet-device-m) {
           width: calc(50% - 32px);
+        }
+
+        @media (max-width: $mobile-device) {
+          border-radius: 4px;
+          border: 1px solid #E6E6E6;
+          box-shadow: 0 2px 8px #F1F3F5;
+          min-width: 216px;
+          margin-top: 0;
+          padding: 16px;
+          margin-right: 16px;
+          flex-direction: column;
+
+          &:last-child {
+            margin-right: 0;
+          }
+
+          &:nth-child(2) {
+
+            @media (max-width: $mobile-device) {
+              margin-top: 0;
+            }
+          }
         }
       }
     }
@@ -225,17 +314,8 @@
 
     &-map {
       margin-top: 68px;
-      margin-left: 72px;
-      margin-right: 72px;
-
-      @media (max-width: $tablet-device-l) {
-        margin-left: 50px;
-        margin-right: 50px;
-      }
 
       @media (max-width: $tablet-device-m) {
-        margin-left: 16px;
-        margin-right: 0;
         overflow: scroll;
       }
     }
@@ -243,12 +323,20 @@
     &-img {
       display: block;
       margin: auto;
+      padding-left: 72px;
+      padding-right: 72px;
+
+      @media (max-width: $tablet-device-l) {
+        padding-left: 50px;
+        padding-right: 50px;
+      }
 
       @media (max-width: $tablet-device-m) {
         width: 940px;
         height: 483px;
         max-width: none;
         padding-right: 16px;
+        padding-left: 16px;
       }
     }
   }
@@ -272,11 +360,22 @@
         background-position: top right;
         background-size: 376px 332px;
       }
+
+      @media (max-width: $mobile-device) {
+        background-size: 288px 254px;
+        background-position: center 160px;
+        margin-top: 24px;
+      }
     }
 
     &-title {
-      max-width: calc(50% - 80px);
+      width: calc(50% - 80px);
       font-weight: 600;
+
+      @media (max-width: $mobile-device) {
+        font-size: 0.8em;
+        width: 100%;
+      }
     }
 
     &-list {
@@ -291,6 +390,13 @@
         padding-left: 56px;
         padding-right: 56px;
       }
+
+      @media (max-width: $mobile-device) {
+        padding-left: 0;
+        padding-right: 0;
+        margin-top: 250px;
+        font-size: 0.7em;
+      }
     }
 
     &-item {
@@ -298,6 +404,10 @@
 
       @media (max-width: $tablet-device-m) {
         margin-top: 72px;
+      }
+
+      @media (max-width: $mobile-device) {
+        margin-top: 32px;
       }
 
       &:first-child {
@@ -343,6 +453,11 @@
       @media (max-width: $tablet-device-m) {
         flex-direction: row;
       }
+
+      @media (max-width: $mobile-device) {
+        flex-direction: column;
+        margin-top: 16px;
+      }
     }
 
     &-img {
@@ -368,6 +483,11 @@
       @media (max-width: $tablet-device-m) {
         width: 112px;
       }
+
+      @media (max-width: $mobile-device) {
+        width: 80px;
+        margin-right: 16px;
+      }
     }
 
     &-item {
@@ -388,6 +508,18 @@
 
         &:first-child {
           margin-right: 16px;
+
+          @media (max-width: $mobile-device) {
+            margin-right: 0;
+          }
+        }
+      }
+
+      @media (max-width: $mobile-device) {
+        font-size: 0.7em;
+
+        &:last-child {
+          margin-top: 16px;
         }
       }
     }

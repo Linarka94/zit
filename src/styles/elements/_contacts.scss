@@ -1,11 +1,23 @@
 .contacts {
   margin-top: 64px;
 
+  & > .feedback {
+
+    @media (max-width: $mobile-device) {
+      display: flex;
+    }
+  }
+
   & > .feedback .feedback__text {
     width: calc(33.333% - 24px);
 
     @media (max-width: $tablet-device-m) {
       order: 1;
+    }
+
+    @media (max-width: $mobile-device) {
+      width: calc(50% - 8px);
+      font-size: 0.7em;
     }
 
     &:not(:first-child) {
@@ -29,11 +41,28 @@
     padding-top: 4px;
     padding-bottom: 4px;
 
+    @media (max-width: $mobile-device) {
+      flex-direction: column;
+    }
+
     & .feedback__text {
 
       @media (max-width: $tablet-device-m) {
         max-width: none;
         margin-top: 0;
+      }
+
+      @media (max-width: $mobile-device) {
+        font-size: 0.7em;
+        margin-top: 12px;
+
+        &--fw700 {
+
+          @media (max-width: $mobile-device) {
+            font-weight: 600;
+            padding-bottom: 17px;
+          }
+        }
       }
     }
 
@@ -45,12 +74,23 @@
 
     &--ml {
       margin-left: 36px;
+
+      @media (max-width: $mobile-device) {
+        display: block;
+        margin-left: 0;
+        margin-top: 12px;
+      }
     }
 
     &--flex {
       @media (max-width: $tablet-device-m) {
         flex-direction: column;
         align-items: flex-start;
+      }
+
+      @media (max-width: $mobile-device) {
+        padding-left: 16px;
+        padding-right: 16px;
       }
     }
 
@@ -67,6 +107,13 @@
 
       @media (max-width: $tablet-device-m) {
         margin-left: 16px;
+      }
+
+      @media (max-width: $mobile-device) {
+        width: 120px;
+        height: 117px;
+        margin-left: 0;
+        margin-right: 0;
       }
     }
   }
@@ -93,6 +140,13 @@
       margin-top: 16px;
     }
 
+    @media (max-width: $mobile-device) {
+      width: 100%;
+      text-align: center;
+      max-width: 288px;
+      margin-right: 0;
+    }
+
     &:hover {
       background-color: var(--link-hover);
     }
@@ -104,6 +158,26 @@
 
   &__smi {
     margin-top: 57px;
+
+    @media (max-width: $mobile-device) {
+      margin-top: 26px;
+    }
+
+    & .feedback__text {
+
+      @media (max-width: $mobile-device) {
+        font-size: 0.7em;
+        margin-top: 12px;
+
+        &--fw700 {
+
+          @media (max-width: $mobile-device) {
+            font-weight: 600;
+            padding-bottom: 10px;
+          }
+        }
+      }
+    }
   }
 
   &__way {
@@ -116,6 +190,12 @@
     border-radius: 4px;
     padding: 24px 24px 20px;
 
+    @media (max-width: $mobile-device) {
+      flex-direction: column;
+      padding: 0;
+      border: none;
+    }
+
     &-item {
       width: calc(50% - 32px);
 
@@ -123,8 +203,24 @@
         width: calc(50% - 24px);
       }
 
+      @media (max-width: $mobile-device) {
+        width: 100%;
+        border-radius: 4px;
+        border: 1px solid #F3F3F5;
+        padding: 12px 16px;
+        margin-top: 16px;
+
+        &:first-child {
+          margin-top: 0;
+        }
+      }
+
       &:nth-child(n+3) {
         margin-top: 27px;
+
+        @media (max-width: $mobile-device) {
+          margin-top: 16px;
+        }
       }
 
       &--underline {
@@ -141,10 +237,59 @@
       font-weight: 700;
       display: block;
       padding-bottom: 24px;
+
+      @media (max-width: $mobile-device) {
+        padding-bottom: 0;
+      }
     }
   }
 
   &__map {
     margin-top: 16px;
+
+    &-frame {
+      height: 656px;
+
+      @media (max-width: $mobile-device) {
+        height: 300px;
+      }
+    }
+  }
+
+  @media (max-width: $mobile-device) {
+
+    &__acc {
+
+      &-title {
+        cursor: pointer;
+        font-size: 1.2em;
+        position: relative;
+        display: flex;
+        align-items: center;
+        font-weight: 600;
+        padding-right: 40px;
+
+        &:after {
+          content: '';
+          width: 16px;
+          height: 16px;
+          background-image: url("/img/arrow-right.svg");
+          background-repeat: no-repeat;
+          background-position: right;
+          position: absolute;
+          right: 0;
+          transition: var(--transition);
+        }
+
+        &--active:after {
+          transform: rotate(90deg);
+        }
+      }
+
+      &-content {
+        display: none;
+        margin-top: 24px;
+      }
+    }
   }
 }

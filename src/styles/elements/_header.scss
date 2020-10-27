@@ -1,7 +1,11 @@
 .header {
   min-height: 80px;
-  box-shadow: 0px 2px 8px #F1F3F5;
+  box-shadow: 0 2px 8px #F1F3F5;
   z-index: 10;
+
+  @media (max-width: $mobile-device) {
+    min-height: 44px;
+  }
 
   &__nav {
     width: 100%;
@@ -12,6 +16,10 @@
 
     & > .header__link:after {
       content: none;
+
+      @media (max-width: $mobile-device) {
+        margin-right: auto;
+      }
     }
   }
 
@@ -19,11 +27,23 @@
     margin-left: auto;
     display: flex;
     align-items: center;
+
+    & > .header__connect-link {
+      @media (max-width: $mobile-device) {
+        display: none;
+      }
+    }
   }
 
   &__logo {
     width: 240px;
     height: 32px;
+
+    @media (max-width: $mobile-device) {
+      width: 160px;
+      height: 21px;
+      vertical-align: middle;
+    }
   }
 
   &__link {
@@ -96,6 +116,17 @@
     margin-right: 32px;
     transition: var(--transition);
 
+    &--burger {
+      display: none;
+
+      @media (max-width: $mobile-device) {
+        display: block;
+        margin-right: 0;
+        max-width: 208px;
+        margin-left: 16px;
+      }
+    }
+
     &:hover {
       background-color: #F7F8FA;
     }
@@ -106,11 +137,17 @@
   }
 
   &__search-input {
-    position: absolute;
-    clip: rect(0 0 0 0);
-    width: 1px;
-    height: 1px;
-    margin: -1px;
+    display: none;
+    border: none;
+    background: none;
+    border-radius: 4px;
+    background-color: var(--bg-light);
+    height: 43px;
+    padding: 0 11px;
+    width: 200px;
+    font-family: var(--ff-OpenSans);
+    font-size: 0.7em;
+    margin-right: 12px;
   }
 
   &__search-button {
@@ -119,6 +156,10 @@
     cursor: pointer;
     margin-right: 27px;
     transition: var(--transition);
+
+    @media (max-width: $mobile-device) {
+      margin-right: 19px;
+    }
 
     //TODO change
 
@@ -149,6 +190,11 @@
       position: relative;
       transition: var(--transition);
 
+      @media (max-width: $mobile-device) {
+        width: 16px;
+        height: 3px;
+      }
+
       &:before,
       &:after {
         content: '';
@@ -158,27 +204,52 @@
         border-radius: 20px;
         position: absolute;
         transition: var(--transition);
+
+        @media (max-width: $mobile-device) {
+          width: 16px;
+          height: 3px;
+        }
       }
 
       &:before {
         top: 10px;
+
+        @media (max-width: $mobile-device) {
+          top: 6px;
+        }
       }
 
       &:after {
         top: -10px;
+
+        @media (max-width: $mobile-device) {
+          top: -6px;
+        }
       }
 
       &--show {
         height: 0;
 
+        @media (max-width: $mobile-device) {
+          height: 0;
+        }
+
         &:before {
           top: 0;
           transform: rotate(45deg);
+
+          @media (max-width: $mobile-device) {
+            top: 0;
+          }
         }
 
         &:after {
           top: 0;
           transform: rotate(-45deg);
+
+          @media (max-width: $mobile-device) {
+            top: 0;
+          }
         }
       }
     }
@@ -194,20 +265,31 @@
       height: calc(100vh - 80px);
       padding-top: 16px;
       padding-bottom: 56px;
-      background-color: rgba(255,255,255,0.95);
+      background-color: rgba(255,255,255,0.98);
       flex-direction: column;
       transition: all 0.5s ease;
 
-      &--show {
-        top: 80px;
+      @media (max-width: $mobile-device) {
+        height: calc(100vh - 44px);
       }
 
+      &--show {
+        top: 80px;
+
+        @media (max-width: $mobile-device) {
+          top: 44px;
+        }
+      }
     }
 
     &-item {
       border-bottom: 1px solid #F7F8FA;
       margin-left: 18px;
       margin-right: 18px;
+
+      @media (max-width: $mobile-device) {
+        margin-top: 12px;
+      }
     }
 
     &-title {
@@ -221,6 +303,11 @@
       @media (max-width: $tablet-device-m) {
         min-height: auto;
         padding: 12px 0;
+      }
+
+      @media (max-width: $mobile-device) {
+        font-size: 0.8em;
+        padding-left: 0;
       }
 
       &--active {
@@ -246,8 +333,16 @@
       & .footer__item-link {
         margin-top: 18px;
 
+        @media (max-width: $mobile-device) {
+          margin-top: 8px;
+        }
+
         &:first-child {
           margin-top: 12px;
+
+          @media (max-width: $mobile-device) {
+            margin-top: 4px;
+          }
         }
       }
     }

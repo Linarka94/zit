@@ -1,0 +1,31 @@
+.testimonials {
+
+  &__list {
+    margin-top: 56px;
+  }
+
+  &__item {
+    min-height: 224px;
+
+    &-description {
+      font-size: 0.8em;
+      color: var(--text-color);
+      margin-top: 8px;
+      margin-bottom: auto;
+    }
+
+    &-more {
+      margin-left: 0;
+      display: flex;
+      align-items: center;
+      font-size: 0.6em;
+      color: var(--link-color);
+    }
+
+    &-icon {
+      width: 16px;
+      height: 16px;
+      margin-right: 8px;
+    }
+  }
+}

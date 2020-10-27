@@ -6,6 +6,10 @@
     flex-wrap: wrap;
   }
 
+  @media (max-width: $mobile-device) {
+    display: none;
+  }
+
   &__text {
     font-size: 0.9em;
 

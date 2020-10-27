@@ -4,6 +4,20 @@
   padding-right: 0;
   position: relative;
 
+  @media (max-width: $tablet-device-l) {
+    padding-right: 0;
+  }
+
+  @media (max-width: $tablet-device-m) {
+    padding-right: 0;
+  }
+
+  @media (max-width: $mobile-device) {
+    padding-right: 0;
+    padding-top: 32px;
+    padding-bottom: 56px;
+  }
+
   &__head {
     display: flex;
     align-items: center;
@@ -33,6 +47,10 @@
 
   &__body {
     margin: 72px auto auto;
+
+    @media (max-width: $mobile-device) {
+      margin-top: 32px;
+    }
   }
 
   &__link {
@@ -53,10 +71,15 @@
     color: var(--text-color);
     transition: var(--transition);
 
+    @media (max-width: $mobile-device) {
+      width: 224px !important;
+      font-size: 0.8em;
+    }
+
     &:hover {
       background-color: var(--bg-white);
       border-color: var(--bg-blue);
-      box-shadow: 0px 2px 8px #F1F3F5;
+      box-shadow: 0 2px 8px #F1F3F5;
     }
 
     &-more {
@@ -70,6 +93,10 @@
       border-radius: 4px;
       margin-top: auto;
       transition: var(--transition);
+
+      @media (max-width: $mobile-device) {
+        font-size: 1em;
+      }
 
       &:hover {
         background-color: var(--bg-blue);

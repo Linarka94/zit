@@ -2,8 +2,19 @@
   border-top: 1px solid var(--separator-light);
 
   &__nav {
-    margin-top: 20px;
-    margin-bottom: 20px;
+
+    @media (max-width: $mobile-device) {
+      padding-right: 0;
+      padding-left: 0;
+    }
+
+    &-wrap {
+      overflow: auto;
+      display: flex;
+      align-items: center;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
 
     &-link {
       margin-right: 32px;
@@ -15,6 +26,20 @@
 
       @media (max-width: $tablet-device-l) {
         font-size: 0.7em;
+      }
+
+      @media (max-width: $mobile-device) {
+        margin-right: 24px;
+        white-space: nowrap;
+
+        &:first-child {
+          margin-left: 16px;
+        }
+
+        &:last-child {
+          padding-right: 16px;
+          margin-right: 0;
+        }
       }
 
       &:hover {
@@ -101,6 +126,10 @@
           @media (max-width: $tablet-device-m) {
             flex-direction: row;
             justify-content: space-between;
+          }
+
+          @media (max-width: $mobile-device) {
+            flex-direction: column;
           }
         }
       }
@@ -199,6 +228,10 @@
         position: absolute;
         right: 32px;
         transition: var(--transition);
+
+        @media (max-width: $mobile-device) {
+          right: 8px;
+        }
       }
 
       &--active {
@@ -207,6 +240,10 @@
         &:after {
           transform: rotate(90deg);
         }
+      }
+
+      &--mt0 {
+        margin-top: 0;
       }
     }
 

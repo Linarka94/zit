@@ -4,8 +4,16 @@
   padding-top: 39px;
   padding-bottom: 39px;
   position: relative;
-
   min-height: 240px;
+
+  @media (max-width: $mobile-device) {
+    min-height: 160px;
+    padding-top: 0;
+    padding-bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
   &:after {
     content: '';
@@ -19,6 +27,10 @@
     width: 100%;
     height: 100%;
     opacity: 0.2;
+
+    @media (max-width: $mobile-device) {
+      content: none;
+    }
   }
 
   &__head {
@@ -36,6 +48,10 @@
       margin-left: 40px;
       margin-right: 32px;
     }
+
+    @media (max-width: $mobile-device) {
+      margin: 0;
+    }
   }
 
   &__title {
@@ -46,6 +62,10 @@
     width: 331px;
     height: 163px;
     mix-blend-mode: luminosity;
+
+    @media (max-width: $mobile-device) {
+      display: none;
+    }
   }
 
   &__choice {
@@ -53,6 +73,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media (max-width: $mobile-device) {
+      margin-top: 16px;
+      flex-direction: column;
+
+      & > .select2:last-child {
+        margin-top: 16px;
+      }
+    }
   }
 
   &__select {
@@ -64,6 +93,11 @@
     color: var(--text-color);
     padding: 16px !important;
     border: none;
+
+    @media (max-width: $mobile-device) {
+      width: 100% !important;
+      margin-top: 16px;
+    }
   }
 
   &__item {
@@ -83,6 +117,14 @@
     @media (max-width: $tablet-device-l) {
       width: calc(50% - 8px);
       margin-right: 0;
+    }
+
+    @media (max-width: $mobile-device) {
+      width: 100%;
+
+      &:not(:first-child) {
+        margin-top: 16px;
+      }
     }
 
     &:hover {
@@ -117,6 +159,10 @@
     &-title {
       color: var(--text-color);
       font-weight: 600;
+
+      @media (max-width: $mobile-device) {
+        font-size: 0.8em;
+      }
     }
 
     &-branch {
@@ -138,6 +184,10 @@
       color: var(--text-color);
       font-size: 0.8em;
       margin-top: 8px;
+
+      @media (max-width: $mobile-device) {
+        font-size: 0.7em;
+      }
     }
 
     &-front {
@@ -153,6 +203,11 @@
         width: 100%;
       }
 
+      @media (max-width: $mobile-device) {
+        min-height: 128px;
+        background-image: none;
+      }
+
       &:not(:first-child) {
         margin-top: 16px;
       }
@@ -162,7 +217,6 @@
   &__front {
     padding-top: 35px;
 
-
     &-wrap {
       flex-direction: column;
       padding-bottom: 285px;
@@ -170,12 +224,24 @@
 
     &-branch {
       text-transform: uppercase;
+
+      @media (max-width: $mobile-device) {
+        text-transform: none;
+        display: flex;
+        flex-wrap: wrap;
+      }
     }
 
     &-info {
       color: var(--text-color);
       margin-left: 32px;
       text-transform: none;
+
+      @media (max-width: $mobile-device) {
+        margin-left: 24px;
+        display: flex;
+        align-items: center;
+      }
     }
   }
 
@@ -188,6 +254,10 @@
     padding-top: 35px;
     display: flex;
     justify-content: space-between;
+
+    @media (max-width: $mobile-device) {
+      flex-direction: column;
+    }
 
     &-head {
       display: flex;
@@ -205,6 +275,13 @@
       padding-left: 25px;
       padding-right: 25px;
       font-size: 0.8em;
+
+      @media (max-width: $mobile-device) {
+        margin-top: 24px;
+        font-size: 0.8em;
+        font-weight: 600;
+        max-width: 288px;
+      }
     }
   }
 
@@ -216,10 +293,19 @@
       padding-bottom: 115px;
     }
 
+    @media (max-width: $mobile-device) {
+      padding-top: 16px;
+    }
+
     &-item {
       display: flex;
       justify-content: space-between;
       margin-top: 64px;
+
+      @media (max-width: $mobile-device) {
+        flex-direction: column;
+        margin-top: 32px;
+      }
 
       &:first-child {
         margin-top: 0;
@@ -233,6 +319,11 @@
       @media (max-width: $tablet-device-m) {
         min-width: 232px;
       }
+
+      @media (max-width: $mobile-device) {
+        width: 100%;
+        font-size: 0.8em;
+      }
     }
 
     &-list {
@@ -240,14 +331,16 @@
       max-width: 671px;
       font-size: 0.9em;
       color: var(--bg-blue);
+
+      @media (max-width: $mobile-device) {
+        font-size: 0.7em;
+        margin-top: 16px;
+        padding: 0 16px;
+      }
     }
 
     &-li {
       margin-top: 16px;
-
-      &:before {
-        content: '';
-      }
 
       &:first-child {
         margin-top: 0;

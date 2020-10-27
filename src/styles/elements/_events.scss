@@ -6,6 +6,10 @@
     padding-bottom: 80px;
   }
 
+  @media (max-width: $mobile-device) {
+    padding-bottom: 46px;
+  }
+
   &__wrap {
     align-items: stretch;
 
@@ -41,12 +45,34 @@
     @media (max-width: $tablet-device-m) {
       width: 100%;
     }
+
+    @media (max-width: $mobile-device) {
+      margin-top: 56px;
+    }
   }
 
   &__articles,
   &__measure {
     & > .page__subtitle {
       margin-bottom: 56px;
+
+      @media (max-width: $mobile-device) {
+        margin-bottom: 32px;
+      }
+    }
+
+    & > .plan__link-more {
+      display: none;
+      font-size: 0.8em;
+      font-weight: 600;
+      padding: 13px 0;
+      width: 100%;
+      margin-top: 24px;
+      max-width: none;
+
+      @media (max-width: $mobile-device) {
+        display: block;
+      }
     }
   }
 
@@ -57,6 +83,10 @@
     min-height: 344px;
     border-radius: 4px;
     transition: var(--transition);
+
+    @media (max-width: $mobile-device) {
+      width: 100%;
+    }
 
     &:hover {
       box-shadow: 0px 24px 69px rgba(0, 0, 0, 0.04), 0px 7.2353px 20.8015px rgba(0, 0, 0, 0.0260636), 0px 3.00517px 8.63987px rgba(0, 0, 0, 0.02), 0px 1.08691px 3.12487px rgba(0, 0, 0, 0.0139364);
@@ -83,12 +113,21 @@
         background-size: 100% 100%;
         width: 100%;
       }
+
+      @media (max-width: $mobile-device) {
+        background-size: 200% 120%;
+      }
     }
 
     &--width {
       width: 100%;
       min-height: 100px;
       padding-left: 12px;
+
+      @media (max-width: $mobile-device) {
+        min-height: 176px;
+        background-color: var(--bg-white);
+      }
 
       &:hover {
         box-shadow: none;
@@ -100,6 +139,10 @@
 
         @media (max-width: $tablet-device-m) {
           padding: 0;
+        }
+
+        @media (max-width: $mobile-device) {
+          padding: 24px 16px 40px;
         }
       }
 
@@ -113,6 +156,11 @@
           margin-top: 0;
           padding: 0;
           justify-content: flex-start;
+        }
+
+        @media (max-width: $mobile-device) {
+          padding: 24px 16px 40px;
+          margin-top: 16px;
         }
       }
     }
@@ -131,6 +179,11 @@
         &:hover {
           box-shadow: none;
         }
+      }
+
+      @media (max-width: $mobile-device) {
+        flex-direction: column;
+        padding-top: 16px;
       }
     }
   }

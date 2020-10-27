@@ -1,0 +1,43 @@
+.license {
+
+  &__wrap {
+    margin-top: 64px;
+
+    & > .page__subtitle {
+
+      &:after {
+        content: none;
+      }
+    }
+
+    & .page__subtitle {
+      text-transform: uppercase;
+    }
+  }
+
+  &__list {
+    margin-top: 30px;
+    justify-content: space-between;
+    padding-bottom: 40px;
+  }
+
+  &__item {
+    min-height: 200px;
+    width: calc(50% - 8px);
+    margin-right: 0;
+    color: var(--text-color);
+    font-size: 0.8em;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    &:nth-child(n+3) {
+      margin-top: 16px;
+    }
+
+    &-img {
+      width: 75px;
+      height: 107px;
+      margin-right: 32px;
+    }
+  }
+}
