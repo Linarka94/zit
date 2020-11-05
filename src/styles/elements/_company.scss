@@ -184,6 +184,75 @@
         font-size: 0.8em;
       }
     }
+
+    &-description {
+      font-size: 0.9em;
+      margin-top: 48px;
+    }
+
+    &-list {
+      margin-top: 98px;
+      padding-left: 100px;
+      display: flex;
+      flex-direction: column;
+      border-left: 1px solid #41B6E6;
+    }
+
+    &-item {
+      margin-top: 56px;
+
+      &:first-child {
+        margin-top: 0;
+      }
+
+      & .page__text + .page__text {
+        margin-top: 12px;
+      }
+
+      &-link {
+        color: var(--link-color);
+        text-decoration: none;
+        transition: var(--transition);
+
+        &:hover {
+          color: var(--link-hover);
+        }
+
+        &:active {
+          opacity: 0.8;
+        }
+      }
+    }
+
+    &-date {
+      color: #41B6E6;
+      margin-bottom: 24px;
+      position: relative;
+
+      &:before {
+        content: '';
+        width: 32px;
+        height: 32px;
+        background-color: var(--bg-white);
+        box-shadow: 0 2px 8px #F1F3F5;
+        border-radius: 50%;
+        position: absolute;
+        top: calc(50% - 16px);
+        left: -116px;
+      }
+
+      &:after {
+        content: '';
+        width: 16px;
+        height: 16px;
+        background-color: #41B6E6;
+        position: absolute;
+        border-radius: 50%;
+        top: calc(50% - 8px);
+        left: -108px;
+      }
+    }
+
   }
 
   &__attainment {

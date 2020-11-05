@@ -68,5 +68,29 @@ $(document).ready(function () {
     $(this).toggleClass('header__burger-title--active');
   })
 
+  // internship application
+  $('#practiceFormButton').click(function () {
+    if ($('.intern__application').css('display') == 'block') {
+      $('.intern__application').css('display', 'none');
+    } else {
+      $('.intern__application').css('display', 'block');
+    }
+  })
 
+  $('#closeFormButton').click(function () {
+    $('.intern__application').css('display', 'none');
+  })
+
+  //dropdown
+
+  $('.header__link').click(function () {
+
+    if ($('.header__link-wrap').hasClass('one')) {
+       $('.header__link').not($(this))
+         .removeClass('header__link--active')
+         .next().slideUp(300);
+    } //если надо чтобы открывался только по одному блоку
+
+    $(this).toggleClass('header__link--active').next().slideToggle(300);
+  })
 });

@@ -1,0 +1,268 @@
+.intern {
+  position: relative;
+
+  & > .page__title {
+    padding-bottom: 24px;
+  }
+
+  &__head {
+    background-image: url("/img/intern-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+
+  &__title {
+    padding-left: 70px;
+    max-width: 400px;
+    color: var(--text-white);
+    text-transform: uppercase;
+  }
+
+  &__list {
+    margin-top: 54px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: calc(50% - 24px);
+
+    &-title {
+      font-family: var(--ff-PTSans);
+      font-size: 1.2em;
+      font-weight: 700;
+      padding-bottom: 18px;
+    }
+
+    &-link {
+      font-weight: 600;
+      border: none;
+      cursor: pointer;
+    }
+
+    & .page__text:not(:first-of-type) {
+      margin-top: 18px;
+    }
+  }
+
+  &__slider {
+    background-color: var(--bg-light);
+    padding-bottom: 130px;
+
+    &-slide {
+      flex-direction: column;
+
+      & > .page__subtitle {
+
+        &:after {
+          content: none;
+        }
+      }
+    }
+
+    &-bio {
+      color: var(--tooltip-color);
+      font-size: 0.9em;
+    }
+
+    &-text {
+      max-width: 1200px;
+
+      & .page__text:first-child,
+      & p:first-child {
+        margin-top: 16px;
+      }
+
+      & .page__text:not(:first-child),
+      & p:not(:first-child) {
+        margin-top: 18px;
+      }
+    }
+  }
+
+  &__features {
+    margin-top: 96px;
+    flex-wrap: wrap;
+
+    & .egis-otb__task-item {
+      border: none;
+    }
+
+    &-text {
+      font-size: 0.9em;
+
+      &--fw {
+        display: block;
+        padding-bottom: 16px;
+        font-weight: 600;
+      }
+    }
+  }
+
+  &__application {
+    border: 1px solid #F1F3F5;
+    box-shadow: 0 2px 8px #F1F3F5;
+    border-radius: 4px;
+    padding: 56px 56px 66px;
+    background-color: var(--bg-white);
+    max-width: 1280px;
+    z-index: 3;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+
+    &-close {
+      border: none;
+      background: none;
+      padding: 0;
+      cursor: pointer;
+      transition: var(--transition);
+      opacity: 0.7;
+      position: absolute;
+      top: 24px;
+      right: 24px;
+      border: 1px solid transparent;
+      border-radius: 2px;
+
+      &:active,
+      &:focus {
+        border-color: #009BDE;
+      }
+
+      &:hover {
+        opacity: 1;
+      }
+
+      & img {
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+
+  &__form {
+    margin-top: 58px;
+
+    &-wrap {
+      display: grid;
+      gap: 16px;
+      grid-template-columns: calc(33.33% - 11px) calc(33.33% - 11px) calc(33.33% - 11px);
+    }
+
+    &-input {
+      border: 1px solid #F3F3F5;
+      border-radius: 4px;
+      padding: 16px 24px;
+      font-family: var(--ff-OpenSans);
+      font-size: 0.8em;
+
+      &:active,
+      &:focus {
+        border-color: #009BDE;
+      }
+    }
+
+    &-text {
+      grid-column-start: 2;
+      grid-column-end: 4;
+      grid-row-start: 4;
+      grid-row-end: 6;
+      resize: none;
+      border: 1px solid #F3F3F5;
+      border-radius: 4px;
+      padding: 16px 24px;
+      font-size: 0.8em;
+
+      &:active,
+      &:focus {
+        border-color: #009BDE;
+      }
+    }
+
+    &-file {
+      cursor: pointer;
+      border: 1px solid #009BDE;
+      border-radius: 4px;
+      font-weight: 600;
+      font-size: 0.8em;
+      color: var(--link-color);
+      text-align: center;
+      padding: 17px 0;
+      transition: var(--transition);
+
+      &:hover {
+        color: var(--text-white);
+        background-color: var(--bg-blue);
+      }
+
+      &:active {
+        opacity: 0.8;
+      }
+
+      &-input {
+        position: absolute;
+        clip: rect(0 0 0 0);
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+      }
+    }
+
+    &-checkbox {
+      display: flex;
+      align-items: center;
+      font-size: 0.6em;
+      margin-top: 42px;
+
+      &-input {
+        display: none;
+
+        &:checked ~ .intern__form-checkbox-label:before {
+          background-color: var(--bg-blue);
+          color: #FFFFFF;
+        }
+      }
+
+      &-label {
+        cursor: pointer;
+
+        &:before {
+          content: '\2714';
+          color: transparent;
+          font-size: 1.4em;
+          margin-right: 16px;
+          display: inline-block;
+          vertical-align: middle;
+          text-align: center;
+          line-height: 1.3;
+          width: 24px;
+          height: 24px;
+          border: 1px solid #009BDE;
+          border-radius: 2px;
+          transition: var(--transition);
+        }
+      }
+    }
+
+    &-link {
+      color: var(--link-color);
+      text-decoration: none;
+      transition: var(--transition);
+
+      &:active {
+        opacity: 0.8;
+      }
+
+      &:hover {
+        color: var(--link-hover);
+      }
+    }
+  }
+}

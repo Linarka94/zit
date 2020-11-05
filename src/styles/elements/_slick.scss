@@ -161,3 +161,11 @@
   }
 }
 
+.intern__slider {
+
+  & .slick-dots {
+    left: 50%;
+    bottom: -100px;
+  }
+}
+

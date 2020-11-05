@@ -25,7 +25,7 @@
 
   &__rendered {
     padding: 0 !important;
-    font-size: 16px !important;
+    font-size: 14px !important;
     line-height: 24px !important;
     height: 24px !important;
   }
@@ -48,9 +48,16 @@
       background-color: #FFFFFF !important;
       border-radius: 2px !important;
       border: 1px solid #F3F3F5 !important;
+      height: 32px !important;
+      padding: 0 !important;
+      padding-left: 21px !important;
+      display: flex;
+      align-items: center;
     }
 
     &__arrow {
+      top: 3px !important;
+      right: 15px !important;
 
       b {
         border-color: #009BDE transparent transparent transparent !important;
@@ -72,7 +79,7 @@
 .news__all-head .select2 {
 
   &:first-of-type {
-    margin-right: 64px !important;
+    margin-right: 64px;
 
     & .select2-selection {
 
@@ -84,6 +91,10 @@
         right: -35px !important;
       }
     }
+  }
+
+  &:nth-of-type(n + 3) {
+    margin-left: 64px;
   }
 
   & .select2-selection {

@@ -1,0 +1,278 @@
+@@include('./_head.html')
+@@include('./_header.html')
+<ul class="breadcrumb container container--header-footer">
+  <li class="breadcrumb__item"><a href="job.html" class="breadcrumb__link breadcrumb__link--back">Назад</a></li>
+  <li class="breadcrumb__item"><a href="index.html" class="breadcrumb__link">Главная</a></li>
+  <li class="breadcrumb__item"><a href="" class="breadcrumb__link">Компания</a></li>
+  <li class="breadcrumb__item"><a href="job.html" class="breadcrumb__link">Карьера</a></li>
+  <li class="breadcrumb__item"><a href="job_vacancy.html" class="breadcrumb__link">Вакансии</a></li>
+</ul>
+<div class="intern__head container container--header-footer">
+  <h1 class="page__title intern__title">
+    Стажировка и практика в ЗИТ
+  </h1>
+</div>
+<div class="page__nav container">
+  <a href="job.html" class="page__nav-link">Карьера</a>
+  <a href="job_vacancy.html" class="page__nav-link">Вакансии</a>
+  <a href="internship.html" class="page__nav-link page__nav-link--active">Стажировка</a>
+</div>
+<section class="intern page__block container">
+  <h2 class="page__title">
+    Стажировка и практика в «ЗащитаИнфоТранс» для выпускников и студентов ВУЗов
+  </h2>
+  <p class="page__text">
+    Мы каждый год проводим стажировки и принимаем на практику молодых специалистов и студентов старших курсов ведущих
+    технических ВУЗов. Это прекрасный шанс набраться опыта, посмотреть, как выглядят реальные бизнес-задачи, и
+    поработать с ведущими ИТ-экспертами, настоящими гуру своего дела.
+  </p>
+  <div class="intern__list">
+    <div class="intern__item">
+      <h3 class="intern__item-title">
+        Стажировка для выпускников
+      </h3>
+      <p class="page__text">
+        Стажировки для молодых специалистов длятся от двух недель до трех месяцев. У каждого стажера есть наставник,
+        который помогает решать задачи и делится знаниями по своей специальности.
+      </p>
+      <p class="page__text">
+        Чтобы попасть на стажировку, откликайтесь на наши вакансии для начинающих специалистов.
+      </p>
+      <a href="job_vacancy.html" class="about__work-link intern__item-link">Вакансии для выпускников</a>
+    </div>
+    <div class="intern__item">
+      <h3 class="intern__item-title">
+        Практика для студентов
+      </h3>
+      <p class="page__text">
+        Практика для студентов старших курсов длится 1 месяц (в соответствии с учебным планом ВУЗа). Как правило,
+        приглашаем будущих разработчиков, аналитиков, тест- и DevOps-инженеров.
+      </p>
+      <p class="page__text">
+        У вас будет возможность попробовать себя в разных ролях и поработать над задачами, максимально приближенными к
+        реальным.
+      </p>
+      <p class="page__text">
+        И самое главное: по итогам практики мы приглашаем лучших из лучших к себе на работу!
+      </p>
+      <button type="button" href="job_vacancy.html" class="about__work-link intern__item-link" id="practiceFormButton">Заявка на
+        практику
+      </button>
+    </div>
+  </div>
+  <div class="container intern__application">
+    <h2 class="page__title">
+      Заявка на прохождение практики в ЗИТ
+    </h2>
+    <button class="intern__application-close" id="closeFormButton">
+      <img src="/img/icon/line/cross.svg" alt="">
+    </button>
+    <form method="get" action="/" class="intern__form">
+      <div class="intern__form-wrap">
+        <input type="text" class="intern__form-input" name="" placeholder="Фамилия">
+        <input type="text" class="intern__form-input" name="" placeholder="Имя">
+        <input type="text" class="intern__form-input" name="" placeholder="Отчество">
+        <input type="text" class="intern__form-input" name="" placeholder="ВУЗ">
+        <input type="text" class="intern__form-input" name="" placeholder="Курс обучения">
+        <input type="text" class="intern__form-input" name="" placeholder="Специальность">
+        <input type="text" class="intern__form-input" name="" placeholder="Дата рождения дд/мм/гггг">
+        <input type="tel" class="intern__form-input" name="" placeholder="Телефон">
+        <input type="email" class="intern__form-input" name="" placeholder="Электронная почта">
+        <input type="text" class="intern__form-input" name="" placeholder="Ссылка на профиль в соцсетях">
+        <textarea name="" id="" class="intern__form-text"
+                  placeholder="Дополнительная информация, которую Вы хотите нам про себя рассказать"></textarea>
+        <label for="cv" class="intern__form-file">Загрузите ваше резюме</label>
+        <input id="cv" type="file" class="intern__form-file-input">
+      </div>
+      <div class="intern__form-checkbox">
+        <input type="checkbox" id="agreement" class="intern__form-checkbox-input">
+        <label for="agreement" class="intern__form-checkbox-label">Я согласен с <a href="" target="_blank" title="Открыть в новом окне" class="intern__form-link">условиями обработки и использования моих персональных данных</a></label>
+      </div>
+      <button type="submit" href="job_vacancy.html" class="about__work-link intern__item-link">Отправить</button>
+    </form>
+  </div>
+</section>
+<section class="page__block container">
+  <h2 class="page__title">
+    Наши преимущества
+  </h2>
+  <div class="container--flex intern__features">
+    <div class="egis-otb__task-item">
+      <img src="/img/developing-it.svg" alt="" class="egis-otb__task-icon">
+      <p class="intern__features-text">
+        <span class="intern__features-text--fw">Ценный опыт</span>
+        Тебя ждут реальные задачи и проекты крупнейшей ИТ-компании в транспортной отрасли
+      </p>
+    </div>
+    <div class="egis-otb__task-item">
+      <img src="/img/transport-b.svg" alt="" class="egis-otb__task-icon">
+      <p class="intern__features-text">
+        <span class="intern__features-text--fw">Hard & soft skills</span>
+        Ты прокачаешь профессиональные навыки и научишься работать в команде
+      </p>
+    </div>
+    <div class="egis-otb__task-item">
+      <img src="/img/developing-it.svg" alt="" class="egis-otb__task-icon">
+      <p class="intern__features-text">
+        <span class="intern__features-text--fw">Команда экспертов</span>
+        Наши лучшие специалисты помогут тебе погрузиться в рабочий контекст и поделятся своими знаниями
+      </p>
+    </div>
+    <div class="egis-otb__task-item">
+      <img src="/img/transport-b.svg" alt="" class="egis-otb__task-icon">
+      <p class="intern__features-text">
+        <span class="intern__features-text--fw">Карьерные перспективы</span>
+        Ты получишь мощный стимул для развития карьеры, а если покажешь действительно крутой результат, мы пригласим
+        тебя в команду!
+      </p>
+    </div>
+  </div>
+</section>
+<section class="about__team intern__slider">
+  <div class="container">
+    <h2 class="page__title">
+      Отзывы стажеров
+    </h2>
+    <div class="about__slider slick-about">
+      <div class="about__slider-slide intern__slider-slide">
+        <h3 class="page__subtitle">
+          Дмитрий
+        </h3>
+        <p class="intern__slider-bio">
+          МГТУ им Н.Э.Баумана, сотрудник ЗИТ
+        </p>
+        <div class="intern__slider-text">
+          <p class="page__text">
+            Я хотел бы рассказать немного о том, как я получил работу в этой компании, будучи студентом родного мне МГТУ
+            им. Баумана. Я завершил обучение в бакалавриате на кафедре РК6 в 2019 году. Но прежде, чем окончить
+            обучение,
+            было необходимо пройти производственную практику. Базой стало место моей нынешней работы – ФГУП
+            "ЗащитаИнфоТранс".
+          </p>
+          <p class="page__text">
+            Сразу хочу оговориться, что место для практики я выбирал из множества предложенных вариантов.
+            «ЗащитаИнфоТранс» привлекла меня широким спектром различных прикладных задач федерального масштаба.
+            Требовался
+            опыт работы с системой управления базами данных Oracle, что для меня на тот момент было очень
+            привлекательно.
+            Хотелось ощутить весь размах и мощь СУБД.
+          </p>
+          <p class="page__text">
+            Я попал в дирекцию информационных технологий, где нам предложили задачи на выбор, по своему вкусу. В
+            частности, Антоном Шабуровым (начальник отдела исследования и обработки данных дирекции по информационным
+            технологиям) было предложено поработать с большими данными, провести анализ, найти ошибки. Учитывая
+            стремительное развитие технологий, а также актуальность применения Big Data и Machine Learning, данная
+            задача
+            для меня, в первую очередь, была интересна и увлекательна.
+          </p>
+          <p class="page__text">
+            Отмечу, что мы с коллегами/одногруппниками по практике проанализировали данные пассажиропотока за 2017–2019
+            годы на четырёх видах транспорта (авиа, железнодорожный, автомобильный, морской/речной). В данных определили
+            аномальные. Составили и разметили обучающую выборку. При помощи полученной выборки обучили классификатор,
+            определяющий аномальные данные и их тип. В качестве применяемой к решению данной задачи технологии был
+            выбран
+            язык Python с применением библиотеки машинного обучения sklearn.
+          </p>
+          <p class="page__text">
+            Практика помогла мне отточить навыки в области баз данных, работы с технологией машинного обучения и
+            применить
+            их при решении прикладной задачи. В настоящий момент я работаю над объёмным проектом, в ходе реализации
+            которого применяются технологии машинного обучения.
+          </p>
+        </div>
+      </div>
+      <div class="about__slider-slide intern__slider-slide">
+        <h3 class="page__subtitle">
+          Вадим
+        </h3>
+        <p class="intern__slider-bio">
+          Студент МГТУ им. Баумана, сотрудник крупного банка
+        </p>
+        <div class="intern__slider-text">
+          <p class="page__text">
+            Сложно говорить о каких-то представлениях, у всех знакомых ребят со старших курсов практика была разная.
+            Я ожидал изучения новых технологий, наверное. Практика была полезна для меня в форме некого тимлид-
+            опыта, в плане наставничества. Помогал ребятам с гитом, с общим пониманием, с тем, что искать, с чего
+            начать, что спросить. Запомнилась больше всего, думаю, техническая часть. Задача была достаточно
+            тривиальная, но с неким изыском в виде типа данных (куб). Понравилась работа Александра (руководитель
+            практики ЗИТ), было проведено много встреч, предоставлено учебных материалов и подсказок.
+          </p>
+        </div>
+      </div>
+      <div class="about__slider-slide intern__slider-slide">
+        <h3 class="page__subtitle">
+          Илья
+        </h3>
+        <p class="intern__slider-bio">
+          Студент МГТУ им Н.Э.Баумана, сотрудник ЗИТ
+        </p>
+        <div class="intern__slider-text">
+          <p class="page__text">
+            Чётких ожиданий от практики не имел. Предполагал, что дадут одно задание на человека, не представлял,
+            какого оно будет направления. Не готовился к практике с технической стороны, только прочитал информацию
+            про «ЗащитаИнфоТранс». Интересной и необычной оказалась командная работа при создании приложения:
+            организация и взаимодействие между участниками и куратором. Также новая тема была связана с кубами
+            данных. Во время практики мне было достаточно интересно работать с большими данными. В ближайшем будущем
+            посвящу больше времени развитию в сфере IT. Больше всего запомнились онлайн встречи, на
+            которых было больше взаимодействия, помощи со сложившимися проблемами, дополнения к решению или,
+            наоборот, исправления.
+          </p>
+        </div>
+      </div>
+      <div class="about__slider-slide intern__slider-slide">
+        <h3 class="page__subtitle">
+          Иван
+        </h3>
+        <p class="intern__slider-bio">
+          Студент МГТУ им. Н.Э.Баумана
+        </p>
+        <div class="intern__slider-text">
+          <p class="page__text">
+            Практика в первую очередь была полезна знакомством с docker и электронной доской задач trello. Эти
+            инструменты уже оказались полезны для работы. Больше всего запомнились регулярные встречи, на которых
+            менторы направляют человека на решение задачи, подсказывают, что и как можно реализовать.
+          </p>
+        </div>
+      </div>
+      <div class="about__slider-slide intern__slider-slide">
+        <h3 class="page__subtitle">
+          Максим
+        </h3>
+        <p class="intern__slider-bio">
+          Студент МГТУ им. Н.Э.Баумана, сотрудник ЗИТ
+        </p>
+        <div class="intern__slider-text">
+          <p class="page__text">
+            Практикой доволен, с компанией тоже не ошибся. Был опыт разработки на объектно-ориентированных
+            языках, поэтому было легче разобраться с поставленной задачей, новым языком и достаточно редким стеком
+            технологий. Ожидал получить новые практические знания и научиться применять старые, узнать больше о
+            компании и сотрудниках, целях компании. Представлял, что будет одна задача на человека, но в итоге нам
+            был дан большой проект, который разбился на части (это намного лучше, потому что весь процесс был
+            максимально приближен к реальной командной разработке). Все вопросы мог задать в любой момент в
+            телеграмме или на консультациях.
+          </p>
+        </div>
+      </div>
+      <div class="about__slider-slide intern__slider-slide">
+        <h3 class="page__subtitle">
+          Ирина
+        </h3>
+        <p class="intern__slider-bio">
+          Студентка МГТУ им. Н.Э.Баумана, сотрудник ЗИТ
+        </p>
+        <div class="intern__slider-text">
+          <p class="page__text">
+            Сознательно выбирала компанию «ЗащитаИнфоТранс» для прохождения практики, так как хотелось
+            попробовать именно направление аналитики (другие компании не предоставляли такой возможности). До
+            первого общего созвона особенно не задумывалась, как все будет проходить. Мне сразу понравилось, что в
+            компанию записалось немного студентов, поэтому работа велась практически индивидуально с каждым.
+            Задача на практику оказалась нетривиальной. Новым для меня стал формат работы: командная работа и
+            распределение ролей внутри команды. За время практики я получила новые важные навыки и знания: работа
+            с документацией, написание сценариев и UML.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+@@include('./_footer.html')
