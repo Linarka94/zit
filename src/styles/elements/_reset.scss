@@ -25,6 +25,7 @@ $tablet-device-l: 1024px;
 html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
 }
 
 body {
