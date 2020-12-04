@@ -430,6 +430,10 @@
         background-color: #41B6E6;
       }
 
+      &:nth-last-child(2):before {
+        background-color: #08ACB3;
+      }
+
       &:last-child:before {
         background-color: #08ACB3;
       }

@@ -93,4 +93,12 @@ $(document).ready(function () {
 
     $(this).toggleClass('header__link--active').next().slideToggle(300);
   })
+
+  //tabs
+
+  $(".tabs__content-item").not(":first").hide();
+  $(".tabs__wrapper .tabs__tab").click(function() {
+    $(".tabs__wrapper .tabs__tab").removeClass("active").eq($(this).index()).addClass("active");
+    $(".tabs__content-item").hide().eq($(this).index()).fadeIn()
+  }).eq(0).addClass("active");
 });

@@ -77,5 +77,133 @@
 
   &__source {
 
+    &-item {
+
+      &:first-of-type {
+        margin-top: 200px;
+        padding-bottom: 55px;
+      }
+
+      &:last-of-type {
+        margin-top: 125px;
+
+        & .page__text {
+          text-transform: uppercase;
+        }
+      }
+
+      & ul.page__text {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        & li:before {
+          content: '-';
+          padding-right: 5px;
+        }
+      }
+    }
+
+    &--mw344px {
+      max-width: 344px;
+    }
+
+    &-img {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      & img:nth-child(n+3) {
+        margin-top: 100px;
+      }
+    }
+
+    &-head {
+      text-align: center;
+
+      & > .page__title {
+        padding-bottom: 20px;
+      }
+
+      &-img {
+        width: 347px;
+        height: 274px;
+      }
+    }
+
+    &-description {
+      margin-top: 156px;
+
+      & p {
+        margin-top: 16px;
+
+        &:first-of-type {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+
+  &__proc {
+
+    &-list {
+      padding-left: 68px;
+    }
+
+    &-item {
+      display: flex;
+      align-items: center;
+      background-color: #FFFFFF;
+      padding: 40px 32px;
+      margin-top: 48px;
+    }
+
+    &-amount {
+      margin-right: 48px;
+      margin-bottom: 0;
+    }
+
+    &-instruction {
+      padding-top: 17px;
+    }
+
+    &-step {
+      border: 1px solid #009BDE;
+      border-radius: 4px;
+      padding: 16px;
+      min-height: 112px;
+      width: calc(50% - 8px);
+      margin-top: 0;
+    }
+  }
+
+  &__order {
+
+    &-img {
+      margin-top: 74px;
+    }
+
+    &-list {
+      margin-top: 80px;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      gap: 48px;
+
+      & .egis-otb__create-item {
+        width: calc(50% - 37px);
+        font-size: 0.9em;
+        margin-top: 0;
+      }
+    }
+
+    &-done {
+      font-weight: 700;
+      font-size: 0.9em;
+      margin-top: 116px;
+    }
+  }
+
+  &__transfer-tabs {
+    margin-top: 120px;
   }
 }
