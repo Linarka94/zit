@@ -1,0 +1,117 @@
+.cert-center {
+
+  &.vacancy {
+    display: flex;
+    align-items: center;
+  }
+
+  &__des {
+    font-size: 0.9em;
+    margin-top: 24px;
+  }
+
+  &__main {
+
+    &-list {
+      margin-top: 66px;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      gap: 72px;
+    }
+
+    &-item {
+      display: flex;
+      flex-direction: column;
+      width: calc(50% - 36px);
+      font-size: 0.9em;
+
+      &-icon {
+        width: 112px;
+        height: 112px;
+      }
+
+      &-title {
+        margin-top: 16px;
+        padding-bottom: 16px;
+        font-size: 1.8em;
+      }
+    }
+
+    &-tooltip {
+      margin-top: 100px;
+      font-size: 0.9em;
+
+      &--fw600 {
+        font-weight: 600;
+      }
+    }
+  }
+
+  &__competence {
+
+    &-list {
+      gap: 80px;
+    }
+
+    &-item {
+      display: flex;
+      align-items: flex-start;
+      width: calc(50% - 40px);
+
+      &-icon {
+        margin-right: 48px;
+      }
+    }
+  }
+
+  &__applicant {
+    background-color: #DAEBF7;
+
+    & div.cert-center__des {
+
+      & p {
+        margin-top: 16px;
+
+        &:first-child {
+          margin-top: 0;
+        }
+      }
+    }
+
+    &-cost {
+      margin-top: 51px;
+
+      &-title {
+
+        &:after {
+          content: none;
+        }
+      }
+
+      & .page__text {
+        font-size: 0.9em;
+        margin-top: 16px;
+      }
+    }
+  }
+
+  &__docs {
+
+    & .connect__proc-instruction {
+      align-items: stretch;
+      margin-top: 72px;
+    }
+  }
+
+  &__contacts {
+
+    & .feedback {
+      gap: 16px;
+      margin-top: 60px;
+
+      & .feedback__text {
+        width: 50%;
+      }
+    }
+  }
+}

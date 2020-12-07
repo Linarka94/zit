@@ -26,6 +26,14 @@
     padding-bottom: 24px;
     cursor: pointer;
 
+    &:hover {
+      border-color: #009BDE;
+    }
+
+    &:active {
+      opacity: 0.8;
+    }
+
     &-img {
       padding-bottom: 20px;
       width: 139px;
@@ -49,6 +57,7 @@
       &-text {
         margin-top: 32px;
         font-size: 0.8em;
+        padding-bottom: 72px;
 
         & p {
           margin-top: 16px;
@@ -57,6 +66,47 @@
         & p:first-child {
           margin-top: 0;
         }
+      }
+    }
+  }
+}
+
+.cert-center__tabs {
+
+  &.tabs__wrapper {
+    margin-top: 75px;
+    display: flex;
+    align-items: flex-start;
+
+    & .active {
+      background-color: #009BDE;
+      color: #FFFFFF;
+    }
+
+    & .tabs__content {
+      padding-top: 0;
+      margin-left: 92px;
+    }
+  }
+
+  & .tabs {
+    flex-direction: column;
+    align-items: flex-start;
+    white-space: nowrap;
+
+    &__tab {
+      min-height: 80px;
+      padding: 24px 26px;
+      color: #0F1C49;
+      border: 1px solid #009BDE;
+      font-family: var(--ff-PTSans);
+      font-size: 1.2em;
+      font-weight: 700;
+      width: 100%;
+
+      //TODO change effect
+      &:hover {
+        filter: brightness(0.8);
       }
     }
   }

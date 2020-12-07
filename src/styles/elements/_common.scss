@@ -255,3 +255,55 @@ a.page__subtitle:hover {
     }
   }
 }
+
+.btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 0.8em;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  padding: 13px 47px;
+
+  &:active {
+    opacity: 0.8;
+  }
+
+  &-blue {
+    background-color: #009BDE;
+    color: #FFFFFF;
+
+    &:hover {
+      background-color: #F23A48;
+    }
+  }
+
+  &-light {
+    border-color: #009BDE;
+    color: #009BDE;
+
+    &:hover {
+      color: #FFFFFF;
+      background-color: #009BDE;
+    }
+  }
+}
+
+.link {
+  color: #009BDE;
+  text-decoration: none;
+  font-size: 0.7em;
+  transition: all 0.3s ease;
+
+  &:hover {
+    color: #F23A48;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
+}
