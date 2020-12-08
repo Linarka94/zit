@@ -4,6 +4,30 @@
   padding-right: 0;
   position: relative;
 
+  &.tabs__wrapper {
+
+    & .tabs {
+      justify-content: flex-start;
+      gap: 40px;
+
+      &__tab {
+        font-size: 1.2em;
+        padding: 0 0 8px;
+        min-height: auto;
+        border: none;
+        border-bottom: 3px solid transparent;
+        width: auto;
+        border-radius: 0;
+        font-family: var(--ff-PTSans);
+      }
+    }
+
+    & .active.tabs__tab {
+      font-weight: 700;
+      border-bottom: 3px solid #009BDE;
+    }
+  }
+
   @media (max-width: $tablet-device-l) {
     padding-right: 0;
   }
@@ -16,33 +40,6 @@
     padding-right: 0;
     padding-top: 32px;
     padding-bottom: 56px;
-  }
-
-  &__head {
-    display: flex;
-    align-items: center;
-
-    & .page__subtitle:after {
-      content: none;
-    }
-  }
-
-  &__input {
-    display: none;
-
-    &:checked + .plan__label {
-      border-color: var(--bg-blue);
-    }
-  }
-
-  &__label {
-    cursor: pointer;
-    transition: var(--transition);
-    border-bottom: 3px solid transparent;
-
-    &:first-of-type {
-      margin-right: 40px;
-    }
   }
 
   &__body {

@@ -6,8 +6,15 @@ $(document).ready(function() {
         variableWidth: true
     });
 
+    $('.slick-plan').slick({
+        variableWidth: true,
+        infinite: false,
+        slidesToShow: 3,
+    });
+
     $('.slick-place').slick({
-        variableWidth: true
+        variableWidth: true,
+        infinite: false,
     });
 
     $('.slick-about').slick({

@@ -1,0 +1,42 @@
+.services {
+
+  &__body {
+
+    & .plan__link {
+      width: calc(50% - 8px) !important;
+      background-repeat: repeat-x;
+    }
+  }
+
+  &__link {
+
+    &-tooltip {
+      margin-top: 8px;
+      font-size: 0.8em;
+      font-weight: 400;
+    }
+  }
+
+  &__done {
+    margin-top: 88px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #FFFFFF;
+    font-family: var(--ff-PTSans);
+    font-weight: 700;
+    background: linear-gradient(90deg, #16D9E3 0%, #30C7EC 47%, #46AEF7 100%);
+    border: 1px solid #41B6E6;
+    border-radius: 4px;
+    padding: 32px 24px;
+    transition: all 0.3s ease;
+
+    &:hover {
+      filter: brightness(0.9);
+    }
+
+    &:active {
+      opacity: 0.8;
+    }
+  }
+}

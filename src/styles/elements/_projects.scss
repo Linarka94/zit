@@ -1,0 +1,26 @@
+.projects {
+  padding-bottom: 180px;
+
+  &__body {
+    margin-top: 32px;
+    flex-wrap: wrap;
+    gap: 16px;
+
+    & .plan__link {
+      margin-right: 0;
+      width: calc(33.333% - 12px) !important;
+      min-width: 416px;
+      padding-right: 14px;
+      line-height: 1.4;
+
+      &.projects__egis-otb {
+        width: 66% !important;
+        background-repeat: repeat-x;
+      }
+    }
+  }
+
+  &__red {
+    color: #F23A48;
+  }
+}
