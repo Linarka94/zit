@@ -37,10 +37,10 @@ $(window).on('load', function () {
 
   $('.marquee').liMarquee();
 
-  $('.news__item-text').text(function (i, text) {
+  $('.news__item p').text(function (i, text) {
 
-    if (text.length >= 140) {
-      text = text.substring(0, 140);
+    if (text.length >= 100) {
+      text = text.substring(0, 100);
       const lastIndex = text.lastIndexOf(" "); //позиция последнего пробела
       text = text.substring(0, lastIndex) + '...'; //обрезаем до последнего слова
     }
@@ -49,13 +49,28 @@ $(window).on('load', function () {
 
   });
 
+  const hideSearch = function () {
+    $('#page__search').removeClass('show');
+    $('.header__link-wrap').removeClass('hidden');
+    $('.header__connect-link').removeClass('hidden');
+  };
+
   $('#searchButton').click(function () {
-    if ($('#page__search').css('display') == 'block') {
-      $('#page__search').css('display', 'none');
-    } else {
-      $('#page__search').css('display', 'block');
+    if ($(this).hasClass('show')) {
+      hideSearch();
     }
+
+    $('#page__search').addClass('show');
+    $('.header__link-wrap').addClass('hidden');
+    $('.header__connect-link').addClass('hidden');
   });
+
+  $(document).on('click', function (e) {
+    if (!e.target.classList.contains('header__search')
+      && !e.target.parentElement.classList.contains('header__search')) {
+      hideSearch();
+    }
+  })
 });
 
 $(document).ready(function () {
@@ -83,15 +98,26 @@ $(document).ready(function () {
 
   //dropdown
 
+  const hideDropMenu = function () {
+    $('.header__link').not($(this)).removeClass('header__link--active').next().slideUp(300);
+  }
+
   $('.header__link').click(function () {
 
     if ($('.header__link-wrap').hasClass('one')) {
        $('.header__link').not($(this))
          .removeClass('header__link--active')
          .next().slideUp(300);
-    } //если надо чтобы открывался только по одному блоку
+    }
 
     $(this).toggleClass('header__link--active').next().slideToggle(300);
+  })
+
+  $(document).on('click', function (e) {
+    if (!e.target.classList.contains('header__link-dropdown')
+      && !e.target.parentElement.classList.contains('header__link-dropdown')) {
+      hideDropMenu();
+    }
   })
 
   //tabs

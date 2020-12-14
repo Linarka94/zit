@@ -98,6 +98,12 @@
       align-items: center;
       justify-content: space-between;
       z-index: 2;
+      transition: all 0.3s ease;
+
+      &.hidden {
+        visibility: hidden;
+        opacity: 0;
+      }
 
       @media (max-width: $tablet-device-m) {
         display: none;
@@ -167,7 +173,12 @@
     font-size: 0.7em;
     font-weight: 600;
     margin-right: 32px;
-    transition: var(--transition);
+    transition: all 0.3s ease;
+
+    &.hidden {
+      visibility: hidden;
+      opacity: 0;
+    }
 
     &--burger {
       display: none;
@@ -189,39 +200,82 @@
     }
   }
 
-  &__search-input {
-    display: none;
-    border: none;
-    background: none;
-    border-radius: 4px;
-    background-color: var(--bg-light);
-    height: 43px;
-    padding: 0 11px;
-    width: 200px;
-    font-family: var(--ff-OpenSans);
-    font-size: 0.7em;
-    margin-right: 12px;
-  }
-
-  &__search-button {
-    border: none;
-    background: none;
-    cursor: pointer;
+  &__search {
+    display: flex;
+    align-items: stretch;
+    height: 44px;
     margin-right: 27px;
-    transition: var(--transition);
+    position: relative;
+    width: 44px;
+    min-height: 100%;
 
     @media (max-width: $mobile-device) {
       margin-right: 19px;
     }
 
-    //TODO change
+    &-input {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      padding-right: 0;
+      display: block;
+      visibility: hidden;
+      width: 48px;
+      height: 44px;
+      color: transparent;
+      background-color: #fff;
+      border: 1px solid transparent;
+      -webkit-border-radius: 2px;
+      border-radius: 2px;
+      opacity: 0;
+      box-shadow: 0 5px 10px 0 rgba(140,140,140,0.05), 0 1px 3px 0 rgba(134,134,134,0.3);
+      transform: translate(0,-50%);
+      transition: all 0.5s ease;
+      font-size: 0.7em;
 
-    &:hover {
-      filter: brightness(0.9);
+      &.show {
+        padding-right: 50px;
+        padding-left: 25px;
+        visibility: visible;
+        width: 800px;
+        color: #0F1C49;
+        opacity: 1;
+        border-color: #41B6E6;
+        transition: all 0.5s ease;
+
+        &:hover {
+          border-color: #009BDE;
+        }
+      }
     }
 
-    &:active {
-      opacity: 0.8;
+    &-button {
+      position: absolute;
+      right: 0;
+      height: 44px;
+      width: 48px;
+      top: 50%;
+      transform: translate(0,-50%);
+      cursor: pointer;
+      margin: 0;
+      background: none;
+      border: none;
+      padding: 0;
+      outline: none !important;
+      cursor: pointer;
+      background-image: url("/img/search.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+
+      //TODO change
+
+      &:hover {
+        filter: brightness(0.9);
+      }
+
+      &:active {
+        opacity: 0.8;
+      }
     }
   }
 

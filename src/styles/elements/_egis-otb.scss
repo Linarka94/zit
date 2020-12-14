@@ -1,9 +1,9 @@
 .egis-otb {
-  background-image: url('/img/egis-otbbg.svg'), linear-gradient(90deg, #4481EB 0%, #04BEFE 100%);
+  background-image: url('/img/egis-otbbg.svg'), linear-gradient(90deg, rgba(68, 129, 235, 1) 0%, rgba(4, 190, 254, 1) 100%);
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: contain;
-  mix-blend-mode: luminosity;
+  background-blend-mode: luminosity;
   padding-top: 60px;
   padding-bottom: 265px;
   color: var(--text-white);
